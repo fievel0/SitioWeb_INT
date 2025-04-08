@@ -731,20 +731,15 @@ nav ul li:hover a::after {
   
   /*boton para comunicarse */
   .botonWhats {
-    width: 50px; /* ajusta el tamaño a tu gusto */
-    height: auto;
-    border: none;
-    background: rgb(21, 31, 102); /* color de fondo */
-    cursor: pointer;
-    
-    /* Bordes redondeados */
-    border-radius: 10px; /* Ajusta el valor según el radio de los bordes */
-  
-    /* Posicionar el botón por encima del contenido */
-    position: fixed;  /* Lo fija en la ventana del navegador */
-    top: 43rem;       /* Ajusta la distancia desde la parte superior */
-    right: 10px;      /* Ajusta la distancia desde el borde derecho */
-    z-index: 9999;    /* Asegura que esté encima de otros elementos */
+      position: fixed;
+  bottom: 10px; /* O el valor que prefieras */
+  right: 10px;
+  width: 50px;
+  border: none;
+  background: rgb(21, 31, 102);
+  cursor: pointer;
+  border-radius: 10px;
+  z-index: 9999;  
   }
   
   
