@@ -806,6 +806,9 @@ nav ul li:hover a::after {
     margin-left: 60px;
     margin-top: -18px;
   }
+  .numero2{
+    border: solid 2px rgb(36, 121, 10);
+  }
   
 }
 /* Find de vista móvil */
@@ -817,6 +820,9 @@ nav ul li:hover a::after {
   }
   .tituloservicio3{
     margin-left: 2rem;
+  }
+  .numero2{
+    border: solid 2px red;
   }
 
 }
