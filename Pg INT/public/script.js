@@ -213,12 +213,12 @@ function initCompartir(logoSelector, messageSelector, url, timeout = 3000) {
 // 8) Inicialización al DOMContentLoaded
 document.addEventListener('DOMContentLoaded', () => {
   initMenuToggle();
-  initViewsCounter('.entrada .numeroviews', '.entrada1 .link-views', 'views_blog_SInformatico');
-  initViewsCounter('.entrada .numeroviews2', '.entrada2 a', 'views_blog_CSeguridad');
-  initViewsCounter('.entrada .numeroviews3', '.entrada3 a', 'views_blog_Telecomunicaciones');
-  initLikesCounter('.entrada .numerolikes', '.entrada1 .megusta, .entrada1 .numerolikes', 'likes_blog_SInformatico');
-  initLikesCounter('.entrada .numerolikes2', '.entrada2 .megusta2, .entrada2 .numerolikes2', 'likes_blog_CSeguridad');
-  initLikesCounter('.entrada .numerolikes3', '.entrada3 .megusta3, .entrada3 .numerolikes3', 'likes_blog_Telecomunicaciones');
+  initViewsCounter('.entrada1 .numeroviews', '.entrada1 .link-views', 'views_blog_SInformatico');
+  initViewsCounter('.entrada2 .numeroviews2', '.entrada2 a', 'views_blog_CSeguridad');
+  initViewsCounter('.entrada3 .numeroviews3', '.entrada3 a', 'views_blog_Telecomunicaciones');
+  initLikesCounter('.entrada1 .numerolikes', '.entrada1 .megusta, .entrada1 .numerolikes', 'likes_blog_SInformatico');
+  initLikesCounter('.entrada2 .numerolikes2', '.entrada2 .megusta2, .entrada2 .numerolikes2', 'likes_blog_CSeguridad');
+  initLikesCounter('.entrada3 .numerolikes3', '.entrada3 .megusta3, .entrada3 .numerolikes3', 'likes_blog_Telecomunicaciones');
   initComentarios('.FormularioComen', '#comentario', '.ContenedorComentarios', 'mis_comentarios_storage1', '.numerocomentarios');
   initComentarios('.FormularioComen2', '#comentario2', '.ContenedorComentarios2', 'mis_comentarios_storage2', '.numerocomentarios2');
   initComentarios('.FormularioComen3', '#comentario3', '.ContenedorComentarios3', 'mis_comentarios_storage3', '.numerocomentarios3');
