@@ -1,0 +1,3044 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+}
+
+/* Logo y eslogan */
+.TYS {
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  font-weight: bold;
+  font-size: 25px;
+}
+.eslogan {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+/* Navbar */
+.navbar {
+  position: relative;
+}
+
+/* Menú de navegación en escritorio */
+nav {
+  display: block;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li {
+  margin-left: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  padding: 10px 0;
+  position: relative; /* Necesario para asegurar que el rectángulo se posicione respecto al enlace */
+}
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 100%; /* El rectángulo cubrirá todo el ancho del texto */
+  height: 5px; /* Alto del rectángulo */
+  background-color: black; /* Color del rectángulo */
+  top: 0; /* Coloca el rectángulo en la parte superior del enlace */
+  left: 0;
+  transform: scaleX(0); /* Inicia invisible */
+  transform-origin: top right; /* Para que la animación sea de derecha a izquierda */
+  transition: transform 0.3s ease; /* Animación de aparición */
+}
+nav ul li:hover a::after {
+  transform: scaleX(1); /* El rectángulo se hace visible */
+  transform-origin: top left; /* Animación de izquierda a derecha */
+}
+/* Checkbox para controlar el menú */
+.menu-btn {
+  display: none;
+}
+
+/* Ícono de menú (hamburguesa) */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.menu-icon span {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+.cy {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.numerolikes, .megusta, .numerolikes2, .megusta2 , .numerolikes3, .megusta3 {
+  cursor: pointer;
+}
+
+
+.Logocompartidos, .Logocompartidos2 ,.Logocompartidos3{
+  cursor: pointer;
+
+}
+
+
+.ContenidoCopiado{
+  margin-top: 10px;
+}
+/*Nuevas medaiqueries*/
+/* Móviles */
+@media screen and (max-width: 767px){
+  .encabezado {
+    flex-direction: column;
+    align-items: flex-start;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .navbar {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0; 
+  }
+
+  .menu-icon {
+    position: absolute;
+    right: -0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    cursor: pointer;
+    margin: 0;
+    margin-top: -2.5rem;
+  }
+
+  .TYS {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .logo {
+    width: fit-content;
+    height: fit-content;
+  }
+  .eslogan {
+    display: inline-block;
+    width: fit-content;
+  }
+
+  /* Ajuste del nav desplegable */
+  nav {
+    display: none;
+    width: 60%;
+    background-color: #e9e9e9;
+    position: absolute;
+    top: calc(100% + 0.5rem); /* justo debajo del header */
+    right: -1.2rem;              /* alineado con el icono */
+    left: auto;               /* anula cualquier left previo */
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-top: 6px;
+  }
+  nav.active {
+    display: block;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul li {
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+  }
+  /*Cuerpo*/
+  .Cuerpo {
+    border: 2px solid rgb(0, 0, 88);
+    background-color: rgb(0, 2, 17);
+    margin-top: 5px;
+    color: white;
+    padding-bottom: 10px;
+  }
+  .Letras{
+    display: inline-block;
+    text-align: center;
+    margin-top: 35px;
+    margin-left: 10px;
+  }
+
+
+  .titulodos{
+    display: inline-block;
+    font-size: 40px;
+  }
+ 
+  .titulodos,
+.encabezadodoss,
+.encabezadotres {
+  display: block;
+  font-weight: bold;
+  font-weight: bold;
+
+
+} 
+.FondoCuerpo {
+  margin: 10px auto;
+  width: 15rem;
+  display: block;
+}
+
+  /*Fin de cuerpo*/
+  /*entradas*/
+  .tituloentradas{
+    font-size: 30px;
+    margin-top: 10px;
+    font-family: 'Georgia', sans-serif;
+    font-weight: bold;
+    text-align: center;
+  }
+  .entrada1 {
+    margin: 20px auto;
+    background-color: rgb(10, 59, 99);
+    color: white;
+    max-width: 700px;
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: -10px;
+  }
+  
+  .titloentrada1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: white;
+    
+  }
+  
+  .fotoentrada1 {
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto 15px;
+  }
+  
+  .creador {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .fecha,
+  .TiempoLectura,
+  .descripcion {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .descripcion {
+    display: block;
+    color: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  
+  .lineaFinal {
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+  }
+  
+  .visualizaciones,
+  .likes,
+  .comentarios,
+  .compartidos {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 10px;
+  }
+  
+  .visualizaciones img,
+  .likes img,
+  .comentarios img,
+  .compartidos img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+  }
+  /*entrada2*/
+  .entrada2 {
+    margin: 20px auto;
+    background-color: rgb(10, 59, 99);
+    color: white;
+    max-width: 700px;
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .titloentrada2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: white;
+    
+  }
+  
+  .fotoentrada2 {
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto 15px;
+  }
+  .descripcion2 {
+    display: block;
+    color: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .creador2 {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .fecha2,
+  .TiempoLectura2,
+  .descripcion {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .descripcion {
+    display: block;
+    color: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  
+  .lineaFinal2 {
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+  }
+  
+  .visualizaciones2,
+  .likes2,
+  .comentarios2,
+  .compartidos2 {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 10px;
+  }
+  
+  .visualizaciones2 img,
+  .likes2 img,
+  .comentarios2 img,
+  .compartidos2 img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+  }
+  /*entrada 3*/
+  .entrada3 {
+    margin: 20px auto;
+    background-color: rgb(10, 59, 99);
+    color: white;
+    max-width: 700px;
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .titloentrada3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: white;
+    
+  }
+  
+  .fotoentrada3 {
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto 15px;
+  }
+  
+  .creador3 {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .fecha3,
+  .TiempoLectura3,
+  .descripcion {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .descripcion {
+    display: block;
+    color: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  
+  .lineaFinal3 {
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+  }
+  
+  .visualizaciones3,
+  .likes3,
+  .comentarios3,
+  .compartidos3 {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 10px;
+  }
+  
+  .visualizaciones3 img,
+  .likes3 img,
+  .comentarios3 img,
+  .compartidos3 img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+  }
+  .descripcion3{
+    color: white;
+    text-decoration: none;
+  }
+  /*fin de entradas*/
+
+  /*Servicios*/
+  
+  .tituloServicios{
+    margin: 20px auto 0 auto; /* centrado horizontal con espacio arriba */
+    font-family: 'Georgia', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    width: fit-content;
+  }
+  .descripcionServicios{
+    margin: 1px auto 0 auto; /* centrado horizontal con espacio arriba */
+    font-family: 'Georgia', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    width: fit-content;
+  }
+  /*tarjeta 1*/
+  .tarjeta1 {
+    display: flex;
+    flex-direction: column;   /* Apila los elementos verticalmente */
+    align-items: center;      /* Centra horizontalmente */
+    justify-content: center;  /* Centra verticalmente si tiene altura definida */
+    text-align: center;       /* Centra el texto dentro de los elementos */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px auto;        /* Centra la tarjeta en la página */
+    background-color: #000000;
+  }
+  
+  .ImgServicio1 {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+  }
+  
+  .MasInformación {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: rgb(141, 129, 61);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  .descricionServicio{
+    color: white;
+  }
+  .tituloservicio{
+    color: white;
+    font-size: 25px;
+  }
+  .MasInformación:hover {
+    background-color: rgb(93, 83, 35);
+  }
+  
+  /*fin tarjeta 1*/
+
+  /*tarjeta 2 */
+  
+  .tarjeta2 {
+    display: flex;
+    flex-direction: column;   /* Apila los elementos verticalmente */
+    align-items: center;      /* Centra horizontalmente */
+    justify-content: center;  /* Centra verticalmente si tiene altura definida */
+    text-align: center;       /* Centra el texto dentro de los elementos */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px auto;        /* Centra la tarjeta en la página */
+    background-color: #000000;
+  }
+  
+  .ImgServicio2 {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+  }
+  
+  .MasInformación2 {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: rgb(141, 129, 61);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  .descricionServicio2{
+    color: white;
+  }
+  .tituloservicio2{
+    color: white;
+    font-size: 25px;
+  }
+  .MasInformación2:hover {
+    background-color: rgb(93, 83, 35);
+  }
+  /*fin tarjeta 2*/
+  /*tarjeta 3*/
+  .tarjeta3 {
+    display: flex;
+    flex-direction: column;   /* Apila los elementos verticalmente */
+    align-items: center;      /* Centra horizontalmente */
+    justify-content: center;  /* Centra verticalmente si tiene altura definida */
+    text-align: center;       /* Centra el texto dentro de los elementos */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px auto;        /* Centra la tarjeta en la página */
+    background-color: #000000;
+  }
+  
+  .ImgServicio3 {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+  }
+  
+  .MasInformación3 {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: rgb(141, 129, 61);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  .descricionServicio3{
+    color: white;
+  }
+  .tituloservicio3{
+    color: white;
+    font-size: 25px;
+  }
+  .MasInformación3:hover {
+    background-color: rgb(93, 83, 35);
+  }
+  /*fin de tarjeta 3*/
+  /*tarjeta 4*/
+  .tarjeta4 {
+    display: flex;
+    flex-direction: column;   /* Apila los elementos verticalmente */
+    align-items: center;      /* Centra horizontalmente */
+    justify-content: center;  /* Centra verticalmente si tiene altura definida */
+    text-align: center;       /* Centra el texto dentro de los elementos */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px auto;        /* Centra la tarjeta en la página */
+    background-color: #000000;
+  }
+  
+  .ImgServicio4 {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+  }
+  
+  .MasInformación4 {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: rgb(141, 129, 61);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  .descricionServicio4{
+    color: white;
+  }
+  .tituloservicio4{
+    color: white;
+    font-size: 25px;
+  }
+  .MasInformación4:hover {
+    background-color: rgb(93, 83, 35);
+  }
+  
+  /*fin de tarjeta 4*/
+
+  /*Sección de contacto*/
+  .tituloContacto{
+    font-size: 30px;
+    margin-top: 10px;
+    font-family: 'Georgia', sans-serif;
+    font-weight: bold;
+    text-align: center;
+  }
+  .descripcionContacto{
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .correo1{
+    width: fit-content;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .correo2{
+    width: fit-content;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .logoCorreo{
+    width: 70px;
+    margin-top: -80px;
+    margin-left: 16rem;
+  }
+
+  .numero1{
+    width: fit-content;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .numero2{
+    width: fit-content;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .logoTelefono{
+    width: 70px;
+    margin-top: -80px;
+    margin-left: 16rem;
+  }
+  /*fin de contacto*/
+  
+  /*boton para comunicarse */
+  .botonWhats {
+  position: fixed;
+  bottom: 50px; /* O el valor que prefieras */
+  right: 10px;
+  width: 50px;
+  border: none;
+  background: rgb(21, 31, 102);
+  cursor: pointer;
+  border-radius: 10px;
+  z-index: 9999;    /* Asegura que esté encima de otros elementos */
+  }
+  
+  
+  
+  
+  
+  /*fin del boton*/
+  
+  /*parte final de la pagina*/
+  .ultimoo{
+    background-color: black;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    
+  }
+  .logoDerecho{
+    color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: fit-content;
+
+  }
+  .derechos{
+    display: none;
+  }
+  .titulo2{
+    color: white;
+    width: fit-content;
+    margin-left: 60px;
+    margin-top: -18px;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+/* Tablets y pantallas pequeñas */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .encabezado {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem; 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+  .navbar{
+    margin-right: 1rem;
+    margin-top: 2rem;
+  }
+  
+
+  /*Inicio de cuerpo*/
+  /* Estilos del cuerpo */
+  .Cuerpo {
+    border: 2px solid rgb(0, 0, 88);
+    background-color: rgb(0, 2, 17);
+    margin-top: 5px;
+    color: white;
+    padding-bottom: 70px;
+  }
+  .Letras{
+    display: inline-block;
+    text-align: center;
+    margin-top: 35px;
+    margin-left: 10px;
+  }
+
+
+  .titulodos{
+    display: inline-block;
+    font-size: 40px;
+  }
+ 
+  .titulodos,
+.encabezadodoss,
+.encabezadotres {
+  display: block;
+  font-weight: bold;
+  font-weight: bold;
+
+
+} 
+  .FondoCuerpo{
+    position: absolute;
+    margin-top: 5px;
+    margin-left:1rem;
+    margin-right: 1rem;
+    width: 15rem;
+  }
+  /*Fin de cuerpo*/
+
+  /*entradas*/
+  .tituloentradas {
+    margin: 20px auto 0 auto; /* centrado horizontal con espacio arriba */
+    font-family: 'Georgia', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    width: fit-content;
+  }
+
+  
+  .entrada1 {
+    margin: 20px auto;
+    background-color: rgb(10, 59, 99);
+    color: white;
+    max-width: 700px;
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .titloentrada1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: white;
+    
+  }
+  
+  .fotoentrada1 {
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto 15px;
+  }
+  
+  .creador {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .fecha,
+  .TiempoLectura,
+  .descripcion {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .descripcion {
+    display: block;
+    color: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  
+  .lineaFinal {
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+  }
+  
+  .visualizaciones,
+  .likes,
+  .comentarios,
+  .compartidos {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 10px;
+  }
+  
+  .visualizaciones img,
+  .likes img,
+  .comentarios img,
+  .compartidos img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+  }
+  
+  /*entrada2*/
+  .entrada2 {
+    margin: 20px auto;
+    background-color: rgb(10, 59, 99);
+    color: white;
+    max-width: 700px;
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .titloentrada2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: white;
+    
+  }
+  
+  .fotoentrada2 {
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto 15px;
+  }
+  .descripcion2 {
+    display: block;
+    color: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .creador2 {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .fecha2,
+  .TiempoLectura2,
+  .descripcion {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .descripcion {
+    display: block;
+    color: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  
+  .lineaFinal2 {
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+  }
+  
+  .visualizaciones2,
+  .likes2,
+  .comentarios2,
+  .compartidos2 {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 10px;
+  }
+  
+  .visualizaciones2 img,
+  .likes2 img,
+  .comentarios2 img,
+  .compartidos2 img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+  }
+  /*entrada 3*/
+  .entrada3 {
+    margin: 20px auto;
+    background-color: rgb(10, 59, 99);
+    color: white;
+    max-width: 700px;
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .titloentrada3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: white;
+    
+  }
+  
+  .fotoentrada3 {
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto 15px;
+  }
+  
+  .creador3 {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .fecha3,
+  .TiempoLectura3,
+  .descripcion {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .descripcion {
+    display: block;
+    color: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  
+  .lineaFinal3 {
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+  }
+  
+  .visualizaciones3,
+  .likes3,
+  .comentarios3,
+  .compartidos3 {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 10px;
+  }
+  
+  .visualizaciones3 img,
+  .likes3 img,
+  .comentarios3 img,
+  .compartidos3 img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+  }
+  .descripcion3{
+    color: white;
+    text-decoration: none;
+  }
+  /*fin de entradas*/
+
+  /*Servicios*/
+  
+  .tituloServicios{
+    margin: 20px auto 0 auto; /* centrado horizontal con espacio arriba */
+    font-family: 'Georgia', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    width: fit-content;
+  }
+  .descripcionServicios{
+    margin: 1px auto 0 auto; /* centrado horizontal con espacio arriba */
+    font-family: 'Georgia', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    width: fit-content;
+  }
+  /*tarjeta 1*/
+  .tarjeta1 {
+    display: flex;
+    flex-direction: column;   /* Apila los elementos verticalmente */
+    align-items: center;      /* Centra horizontalmente */
+    justify-content: center;  /* Centra verticalmente si tiene altura definida */
+    text-align: center;       /* Centra el texto dentro de los elementos */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px auto;        /* Centra la tarjeta en la página */
+    background-color: #000000;
+  }
+  
+  .ImgServicio1 {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+  }
+  
+  .MasInformación {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: rgb(141, 129, 61);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  .descricionServicio{
+    color: white;
+  }
+  .tituloservicio{
+    color: white;
+    font-size: 25px;
+  }
+  .MasInformación:hover {
+    background-color: rgb(93, 83, 35);
+  }
+  
+  /*fin tarjeta 1*/
+
+  /*tarjeta 2 */
+  
+  .tarjeta2 {
+    display: flex;
+    flex-direction: column;   /* Apila los elementos verticalmente */
+    align-items: center;      /* Centra horizontalmente */
+    justify-content: center;  /* Centra verticalmente si tiene altura definida */
+    text-align: center;       /* Centra el texto dentro de los elementos */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px auto;        /* Centra la tarjeta en la página */
+    background-color: #000000;
+  }
+  
+  .ImgServicio2 {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+  }
+  
+  .MasInformación2 {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: rgb(141, 129, 61);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  .descricionServicio2{
+    color: white;
+  }
+  .tituloservicio2{
+    color: white;
+    font-size: 25px;
+  }
+  .MasInformación2:hover {
+    background-color: rgb(93, 83, 35);
+  }
+  /*fin tarjeta 2*/
+  /*tarjeta 3*/
+  .tarjeta3 {
+    display: flex;
+    flex-direction: column;   /* Apila los elementos verticalmente */
+    align-items: center;      /* Centra horizontalmente */
+    justify-content: center;  /* Centra verticalmente si tiene altura definida */
+    text-align: center;       /* Centra el texto dentro de los elementos */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px auto;        /* Centra la tarjeta en la página */
+    background-color: #000000;
+  }
+  
+  .ImgServicio3 {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+  }
+  
+  .MasInformación3 {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: rgb(141, 129, 61);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  .descricionServicio3{
+    color: white;
+  }
+  .tituloservicio3{
+    color: white;
+    font-size: 25px;
+  }
+  .MasInformación3:hover {
+    background-color: rgb(93, 83, 35);
+  }
+  /*fin de tarjeta 3*/
+  /*tarjeta 4*/
+  .tarjeta4 {
+    display: flex;
+    flex-direction: column;   /* Apila los elementos verticalmente */
+    align-items: center;      /* Centra horizontalmente */
+    justify-content: center;  /* Centra verticalmente si tiene altura definida */
+    text-align: center;       /* Centra el texto dentro de los elementos */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px auto;        /* Centra la tarjeta en la página */
+    background-color: #000000;
+  }
+  
+  .ImgServicio4 {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+  }
+  
+  .MasInformación4 {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: rgb(141, 129, 61);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  .descricionServicio4{
+    color: white;
+  }
+  .tituloservicio4{
+    color: white;
+    font-size: 25px;
+  }
+  .MasInformación4:hover {
+    background-color: rgb(93, 83, 35);
+  }
+  
+  /*fin de tarjeta 4*/
+
+  /*Sección de contacto*/
+  
+  .tituloContacto{
+    font-size: 30px;
+    font-family: 'Georgia', sans-serif;
+    font-weight: bold;
+    text-align: center; 
+    
+  }
+  .descripcionContacto{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    font-family: 'Georgia', sans-serif;
+    font-weight: bold;
+  }
+  .correo1{
+    width: fit-content;
+    margin-top: 20px;
+    margin-left: 15rem;
+  }
+  .correo2{
+    width: fit-content;
+    margin-top: 10px;
+    margin-left: 15rem;
+  }
+  .logoCorreo{
+    width: 70px;
+    margin-top: -80px;
+    margin-left: 10rem;
+  }
+  .logoTelefono{
+    position: absolute;
+    width: 70px;
+    margin-top: -3.6rem;
+    margin-left: 20rem;
+  }
+  .numero1{
+    position: absolute;
+    width: fit-content;
+    margin-left: 40rem;
+    margin-top: -2.1rem;
+
+  }
+  .numero2{
+    position: absolute;
+    width: fit-content;
+    margin-left: 40rem;
+    margin-top: -4rem;
+
+    
+  }
+  
+  /*fin de contacto*/
+  
+  /*boton para comunicarse */
+  .botonWhats {
+  position: fixed;
+  bottom: 50px; /* O el valor que prefieras */
+  right: 10px;
+  width: 50px;
+  border: none;
+  background: rgb(21, 31, 102);
+  cursor: pointer;
+  border-radius: 10px;
+  z-index: 9999;    /* Asegura que esté encima de otros elementos */
+  }
+  /*fin del boton*/
+  
+  /*parte final de la pagina*/
+  .ultimoo{
+    background-color: black;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    
+  }
+  .logoDerecho{
+    color: white;
+    margin-top: 10px;
+    margin-left: 3rem;
+    width: fit-content;
+
+  }
+  .derechos{
+    color: white;
+    margin-left: 5rem;
+    margin-top: -18px;
+  }
+  .titulo2{
+    color: white;
+    width: fit-content;
+    margin-top: -18px;
+    margin-left: 25rem;  
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  
+} 
+
+/* Pantallas medianas / laptops */
+@media screen and (min-width: 1025px) and (max-width: 1558px){
+  .encabezado {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem; 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+  .navbar{
+    margin-right: 1rem;
+    margin-top: 2rem;
+  }
+  /*Inicio de cuerpo*/
+  .titulodos{
+    margin-left: 6rem;
+  }
+  .encabezadodoss{
+    margin-left: 7rem;
+  }
+  .encabezadotres{
+    margin-left: 5rem;
+  }
+  .FondoCuerpo{
+    margin-left: 8rem;
+  }
+  /*Cuerpo*/
+  .Cuerpo{
+    padding-bottom: 100px;
+  }
+  .titulodos{
+    margin-left: -30rem;
+  }
+  .encabezadodoss{
+    margin-left: -30rem;
+  }
+  .FondoCuerpo{
+    position: absolute;
+    margin-top: -8rem;
+    margin-left: 20rem;
+  }
+  .encabezadotres{
+    margin-left: -26rem;
+  }
+  
+  /*Fin de cuerpo*/
+
+  /*entradas*/
+  .tituloentradas{
+    margin-top: 20px;
+    margin-left: 7.5rem;
+    font-family: 'Georgia', sans-serif;
+    font-weight: bold;
+    margin-left: 41rem;
+    font-size: 30px;
+
+  }
+  .entrada1{
+    margin-top: 5px;
+    background-color: rgb(10, 59, 99);
+    padding-bottom: 30px;
+    margin-right: 70rem;
+    margin-left: 30px;
+  }
+  .fotoentrada1{
+    margin-top: 50px;
+    width: 18rem;
+    height: 10rem;
+    border: solid 2px black;
+    margin-left: 90px;
+   }
+  .creador{
+    position: absolute; /* Posicionamiento absoluto respecto de .entrada1 */
+    margin-top: 14.5rem;
+    margin-left: -22rem;
+    cursor: pointer;
+ 
+  }
+  .fecha{
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    color: white;
+    width: fit-content;
+ 
+  }
+  .TiempoLectura{
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: 13.5rem;
+    color: white;
+    width: fit-content;
+  }
+  .titloentrada1{
+    position: absolute;
+    margin-top: -13rem;
+    font-size: 25px;
+    margin-left: 7rem;
+    color: white;
+     width: fit-content;
+    height: fit-content;
+  }
+  .descripcion{
+    position: absolute;
+    color: white;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    text-align: center;
+    margin-right: 70rem;
+  }
+  .lineaFinal {
+    border-top: 1px solid white;
+    margin: 20px auto 0;
+    width: 85%;
+    margin-left: 2rem;
+    margin-top: 9rem;
+  }
+  .visualizaciones{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 2rem;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+   }
+  
+  .numeroviews{
+    margin-top: 2px;
+    width: fit-content;
+    height: fit-content;
+ 
+  }
+  .ojo{
+    width: 20px;
+    margin-top: -3px;
+    margin-left: 6px;
+ 
+  }
+  .likes{
+    position: absolute;
+    display: flex;
+    margin-top: -20px;
+    margin-left: 10rem;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+ 
+  }
+  .numerolikes{
+    margin-top: 2px;
+    width: fit-content;
+    height: fit-content;
+ 
+  }
+  .megusta{
+    width: 20px;
+    margin-top: -3px;
+    margin-left: 6px;
+ 
+  }
+  .comentarios{
+    position: absolute;
+    display: flex;
+    margin-top: -1.3rem;
+    margin-left: 17.5rem;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+ 
+  }
+  .numerocomentarios{
+    margin-top: 2px;
+    width: fit-content;
+    height: fit-content;
+ 
+  }
+  .comentario{
+    width: 20px;
+    margin-top: -3px;
+    margin-left: 6px;
+ 
+  }
+  .compartidos{
+    position: absolute;
+    display: flex;
+    margin-top: -1.2rem;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 23.5rem;
+ 
+  }
+  .numerocompartidos{
+    margin-top: -1px;
+    width: fit-content;
+    height: fit-content;
+ 
+
+  }
+  .Logocompartidos{
+    width: 20px;
+    margin-top: -3px;
+    margin-left: 6px;
+  }
+  /*entrada2*/
+  .entrada2{
+    position: absolute;
+    margin-top: -27.1rem;
+    background-color: rgb(10, 59, 99);
+    padding-bottom: 30px;
+    margin-right: 70rem;
+    margin-left: 36rem;
+  }
+  .fotoentrada2{
+    margin-top: 50px;
+    width: 18rem;
+    height: 10rem;
+    border: solid 2px black;
+    margin-left: 90px;
+    margin-right: 60px;
+   }
+  .creador2{
+    position: absolute; /* Posicionamiento absoluto respecto de .entrada1 */
+    margin-top: 14.5rem;
+    margin-left: -25.5rem;
+    cursor: pointer;
+ 
+  }
+  .fecha2{
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: 2.2rem;
+    color: rgb(255, 255, 255);
+    width: fit-content;
+ 
+  }
+  .TiempoLectura2{
+    position: absolute;
+    margin-top:3rem;
+    margin-left: 13.5rem;
+    color: rgb(255, 255, 255);
+    width: fit-content;
+  }
+  .titloentrada2{
+    position: absolute;
+    margin-top: -12.6rem;
+    font-size: 25px;
+    margin-left: 5.1rem;
+    color: rgb(255, 255, 255);
+     width: fit-content;
+    height: fit-content;
+  }
+  .descripcion2{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    margin-top: 4.8rem;
+    margin-left: 2rem;
+    text-align: center;
+    margin-right: 1rem;
+  }
+  .lineaFinal2{
+    border-top: 1px solid white;
+    margin: 20px auto 0;
+    width: 85%;
+    margin-left: 2rem;
+    margin-top: 9rem;
+  }
+  .visualizaciones2{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 2rem;
+    color: rgb(255, 255, 255);
+    width: fit-content;
+    height: fit-content;
+   }
+  
+  .numeroviews2{
+    margin-top: 2px;
+    width: fit-content;
+    height: fit-content;
+ 
+  }
+  .ojo2{
+    width: 20px;
+    margin-top: -3px;
+    margin-left: 6px;
+ 
+  }
+  .likes2{
+    position: absolute;
+    display: flex;
+    margin-top: -20px;
+    margin-left: 10rem;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+ 
+  }
+  .numerolikes2{
+    margin-top: 2px;
+    width: fit-content;
+    height: fit-content;
+ 
+  }
+  .megusta2{
+    width: 20px;
+    margin-top: -3px;
+    margin-left: 6px;
+ 
+  }
+  .comentarios2{
+    position: absolute;
+    display: flex;
+    margin-top: -1.3rem;
+    margin-left: 17.5rem;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+ 
+  }
+  .numerocomentarios2{
+    margin-top: 2px;
+    width: fit-content;
+    height: fit-content;
+ 
+  }
+  .comentario2{
+    width: 20px;
+    margin-top: -3px;
+    margin-left: 6px;
+ 
+  }
+  .compartidos2{
+    position: absolute;
+    display: flex;
+    margin-top: -1.2rem;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 23.5rem;
+ 
+  }
+  .numerocompartidos2{
+    margin-top: -1px;
+    width: fit-content;
+    height: fit-content;
+ 
+
+  }
+  .Logocompartidos2{
+    width: 20px;
+    margin-top: -3px;
+    margin-left: 6px;
+  }
+  /*entrada 3*/
+  .entrada3{
+    position: absolute;
+    margin-top: -27.1rem;
+    background-color: rgb(10, 59, 99);
+    padding-bottom: 30px;
+    margin-right: 70rem;
+    margin-left: 70rem;
+  }
+  .fotoentrada3{
+    margin-top: 50px;
+    width: 18rem;
+    height: 10rem;
+    border: solid 2px black;
+    margin-left: 90px;
+    margin-right: 60px;
+   }
+  .creador3{
+    position: absolute; /* Posicionamiento absoluto respecto de .entrada1 */
+    margin-top: 14.6rem;
+    margin-left: -25.5rem;
+    cursor: pointer;
+ 
+  }
+  .fecha3{
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: 2.2rem;
+    color: rgb(255, 255, 255);
+    width: fit-content;
+ 
+  }
+  .TiempoLectura3{
+    position: absolute;
+    margin-top:3rem;
+    margin-left: 13.5rem;
+    color: rgb(255, 255, 255);
+    width: fit-content;
+  }
+  .titloentrada3{
+    position: absolute;
+    margin-top: -12.6rem;
+    font-size: 25px;
+    margin-left: 7.5rem;
+    color: rgb(255, 255, 255);
+     width: fit-content;
+    height: fit-content;
+  }
+  .descripcion3{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    margin-top:4.5rem;
+    margin-left: 2rem;
+    text-align: center;
+    margin-right: 1rem;
+  }
+  .lineaFinal3{
+    border-top: 1px solid white;
+    margin: 20px auto 0;
+    width: 85%;
+    margin-left: 2rem;
+    margin-top: 8.9rem;
+  }
+  .visualizaciones3{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 2rem;
+    color: rgb(255, 255, 255);
+    width: fit-content;
+    height: fit-content;
+   }
+  
+  .numeroviews3{
+    margin-top: 2px;
+    width: fit-content;
+    height: fit-content;
+ 
+  }
+  .ojo3{
+    width: 20px;
+    margin-top: -3px;
+    margin-left: 6px;
+ 
+  }
+  .likes3{
+    position: absolute;
+    display: flex;
+    margin-top: -20px;
+    margin-left: 10rem;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+ 
+  }
+  .numerolikes3{
+    margin-top: 2px;
+    width: fit-content;
+    height: fit-content;
+ 
+  }
+  .megusta3{
+    width: 20px;
+    margin-top: -3px;
+    margin-left: 6px;
+ 
+  }
+  .comentarios3{
+    position: absolute;
+    display: flex;
+    margin-top: -1.3rem;
+    margin-left: 17.5rem;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+ 
+  }
+  .numerocomentarios3{
+    margin-top: 2px;
+    width: fit-content;
+    height: fit-content;
+ 
+  }
+  .comentario3{
+    width: 20px;
+    margin-top: -3px;
+    margin-left: 6px;
+ 
+  }
+  .compartidos3{
+    position: absolute;
+    display: flex;
+    margin-top: -1.2rem;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 23.5rem;
+ 
+  }
+  .numerocompartidos3{
+    margin-top: -1px;
+    width: fit-content;
+    height: fit-content;
+ 
+
+  }
+  .Logocompartidos3{
+    width: 20px;
+    margin-top: -3px;
+    margin-left: 6px;
+  }
+
+  /*fin de entradas*/
+
+  /*Servicios*/
+  
+  .tituloServicios{
+    font-size: 30px;
+    margin-left: 45rem;
+    margin-top: 10px;
+    font-family: 'Georgia', sans-serif;
+    font-weight: bold;
+  }
+  .descripcionServicios{
+    margin-left:39rem;
+    font-family: 'Georgia', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+  }
+  /*tarjeta 1*/
+  .tarjeta1{
+    background-color: black;
+    margin-top: 10px;
+    padding-top: 1px;
+    padding-bottom: 30px;
+    margin-left: 2rem;
+    margin-right: 1.4rem;
+  }
+  .tituloservicio{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    color: rgb(255, 255, 255);
+    margin-top: 40px;
+    margin-left: 52rem;
+    font-size: 40px;
+  }
+  .ImgServicio1{
+    width: 25rem;
+    margin-top: 3rem;
+    margin-left: 6rem;
+  }
+  .descricionServicio{
+    position: absolute;
+    margin-top: -18rem;
+    color: rgb(255, 255, 255);
+    margin-left: 40rem;
+    margin-right: 10px;
+    text-align: center;
+    margin-right: 6rem;
+    font-size: 20px;
+
+  }
+  .MasInformación{
+    position: absolute;
+    background-color: rgb(141, 129, 61);
+    margin-top: 20rem;
+    margin-left: 25rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-decoration: none;
+
+  }
+  .MasInformación:hover{
+    background-color: rgb(93, 83, 35);
+  }
+  /*fin tarjeta 1*/
+
+  /*tarjeta 2 */
+  
+  .tarjeta2{
+    position: absolute;
+    background-color: black;
+    margin-top: 1rem;
+    padding-top: 1px;
+    padding-bottom: 160px;
+    margin-left: 2rem;
+    margin-right: 1rem;
+  }
+  .tituloservicio2{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    color: rgb(255, 255, 255);
+    margin-top: 12px;
+    margin-left: 11rem;
+    font-size: 23px;
+  }
+  .ImgServicio2{
+    width: 15rem;
+    margin-top: 3rem;
+    margin-left: 7rem;
+    margin-right: 5.7rem;
+  }
+  .descricionServicio2{
+    position: absolute;
+    margin-top: 1rem;
+    color: rgb(255, 255, 255);
+    margin-left: 2rem;
+    margin-right: 10px;
+    text-align: center;
+    margin-right: 2rem;
+
+  }
+  .MasInformación2{
+    position: absolute;
+    background-color: rgb(141, 129, 61);
+    margin-top: 25.5rem;
+    margin-left: -18rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+
+  }
+  .MasInformación2:hover{
+    background-color: rgb(93, 83, 35);
+  }
+  /*fin tarjeta 2*/
+  /*tarjeta 3*/
+  .tarjeta3{
+    position: absolute;
+    background-color: black;
+    margin-top: 1rem;
+    padding-top: 1px;
+    padding-bottom:168px;
+    margin-left: 42rem;
+    margin-right: 1rem;
+  }
+  .tituloservicio3{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    color: rgb(255, 255, 255);
+    margin-top: 12px;
+    margin-left: 1rem;
+    font-size: 20px;
+  }
+  .ImgServicio3{
+    width: 10rem;
+    margin-top: 3rem;
+    margin-left: 6rem;
+    margin-right: 5.7rem;
+  }
+  .descricionServicio3{
+    position: absolute;
+    margin-top: 1rem;
+    color: rgb(255, 255, 255);
+    margin-left: 2rem;
+    margin-right: 10px;
+    text-align: center;
+    margin-right: 2rem;
+
+  }
+  .MasInformación3{
+    position: absolute;
+    background-color: rgb(141, 129, 61);
+    margin-top: 25.5rem;
+    margin-left: -16rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+
+  }
+  .MasInformación3:hover{
+    background-color: rgb(93, 83, 35);
+  }
+  /*fin de tarjeta 3*/
+  /*tarjeta 4*/
+  .tarjeta4{
+    position: absolute;
+    background-color: black;
+    margin-top: 1rem;
+    padding-top: 1px;
+    padding-bottom: 150px;
+    margin-left: 75rem;
+    margin-right: 2rem;
+  }
+  .tituloservicio4{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    color: rgb(255, 255, 255);
+    margin-top: 15px;
+    margin-left: 1rem;
+    font-size: 18px;
+  }
+  .ImgServicio4{
+    width: 10rem;
+    margin-top: 3rem;
+    margin-left: 7rem;
+    margin-right: 5.7rem;
+  }
+  .descricionServicio4{
+    position: absolute;
+    margin-top: 1rem;
+    color: rgb(255, 255, 255);
+    margin-left: 2rem;
+    margin-right: 10px;
+    text-align: center;
+    margin-right: 2rem;
+
+  }
+  .MasInformación4{
+    position: absolute;
+    background-color: rgb(141, 129, 61);
+    margin-top: 6.8rem;
+    margin-left: 7.5rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+
+  }
+  .MasInformación4:hover{
+    background-color: rgb(93, 83, 35);
+  }
+  
+  /*fin de tarjeta 4*/
+
+  /*Sección de contacto*/
+  .Contactoñ{
+    position: absolute;
+
+  }
+  .tituloContacto{
+    font-size: 30px;
+    margin-top: 30rem;
+    margin-left: 46rem;
+    font-family: 'Georgia', sans-serif;
+    font-weight: bold;
+    
+  }
+  .descripcionContacto{
+    margin-top: 1rem;
+    margin-left: 25rem;
+    font-family: 'Georgia', sans-serif;
+    font-weight: bold;
+  }
+  .correo1{
+    width: fit-content;
+    margin-top: 20px;
+    margin-left: 35rem;
+  }
+  .correo2{
+    width: fit-content;
+    margin-top: 10px;
+    margin-left: 35rem;
+  }
+  .logoCorreo{
+    width: 70px;
+    margin-top: -80px;
+    margin-left: 30rem;
+  }
+
+  .numero1{
+    position: absolute;
+
+    width: fit-content;
+    margin-top: -2.2rem;
+    margin-left: 65rem;
+  }
+  .numero2{
+    position: absolute;
+    width: fit-content;
+    margin-top: -4rem;
+    margin-left: 65rem;
+  }
+  .logoTelefono{
+    width: 70px;
+    margin-top: -80px;
+    margin-left: 36rem;
+  }
+  /*fin de contacto*/
+  
+  /*boton para comunicarse */
+  .botonWhats {
+  position: fixed;
+  bottom: 50px; /* O el valor que prefieras */
+  right: 10px;
+  width: 50px;
+  border: none;
+  background: rgb(21, 31, 102);
+  cursor: pointer;
+  border-radius: 10px;
+  z-index: 9999;    /* Asegura que esté encima de otros elementos */
+  }
+  /*fin del boton*/
+  
+  /*parte final de la pagina*/
+  .ultimoo{
+    
+    background-color: black;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    
+  }
+  .logoDerecho{
+    color: white;
+    margin-top: 10px;
+    margin-left: 3rem;
+    width: fit-content;
+
+  }
+  .derechos{
+    color: white;
+    margin-left: 5rem;
+    margin-top: -18px;
+  }
+  .titulo2{
+    color: white;
+    width: fit-content;
+    margin-left: 45rem;
+    margin-top: -18px;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+/* Pantallas grandes */
+@media screen and (min-width: 1559px){
+  
+  .encabezado {
+    flex-direction: column;
+    align-items: flex-start;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .navbar{
+    margin-left: 69rem;
+    margin-top: -1.5rem;
+  }
+  /*Inicio de cuerpo*/
+  .titulodos{
+    margin-left: 6rem;
+  }
+  .encabezadodoss{
+    margin-left: 7rem;
+  }
+  .encabezadotres{
+    margin-left: 5rem;
+  }
+  .FondoCuerpo{
+    margin-left: 8rem;
+  }
+  /*Cuerpo*/
+  
+  
+  /*Fin de cuerpo*/
+  /*Inicio de cuerpo*/
+  /* Estilos del cuerpo */
+  .Cuerpo {
+  border: 2px solid rgb(0, 0, 88);
+  background-color: rgb(0, 2, 17);
+  margin-top: 5px;
+  color: white;
+  padding-bottom: 70px;
+}
+
+  .Letras{
+    display: inline-block;
+    text-align: center;
+    margin-top: 35px;
+    margin-left: 10rem;
+  }
+
+
+  .titulodos{
+    display: inline-block;
+    font-size: 40px;
+  }
+ 
+  .titulodos,
+.encabezadodoss,
+.encabezadotres {
+  display: block;
+  font-weight: bold;
+  font-weight: bold;
+
+
+} 
+  .FondoCuerpo{
+    position: absolute;
+    margin-top: 5px;
+    margin-right: 1rem;
+    width: 15rem;
+    margin-left:20rem;
+  }
+  /*Fin de cuerpo*/
+
+  /*entradas*/
+  .tituloentradas{
+    margin-top: 20px;
+    margin-left: 7.5rem;
+    font-family: 'Georgia', sans-serif;
+    font-weight: bold;
+    margin-left: 41rem;
+    font-size: 30px;
+
+  }
+  .entrada1{
+    margin-top: 5px;
+    background-color: rgb(10, 59, 99);
+    padding-bottom: 30px;
+    margin-right: 67rem;
+    margin-left: 30px;
+  }
+  .fotoentrada1{
+    margin-top: 50px;
+    width: 18rem;
+    height: 10rem;
+    border: solid 2px black;
+    margin-left: 90px;
+   }
+  .creador{
+    position: absolute; /* Posicionamiento absoluto respecto de .entrada1 */
+    margin-top: 14.5rem;
+    margin-left: -22rem;
+    cursor: pointer;
+ 
+  }
+  .fecha{
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    color: white;
+    width: fit-content;
+ 
+  }
+  .TiempoLectura{
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: 13.5rem;
+    color: white;
+    width: fit-content;
+  }
+  .titloentrada1{
+    position: absolute;
+    font-size: 25px;
+    margin-left: 7rem;
+    color: white;
+     width: fit-content;
+    height: fit-content;
+    margin-top: 10px;
+  }
+  .descripcion{
+    position: absolute;
+    color: white;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    text-align: center;
+    margin-right: 70rem;
+  }
+  .lineaFinal {
+    border-top: 1px solid white;
+    margin: 20px auto 0;
+    width: 85%;
+    margin-left: 2rem;
+    margin-top: 9rem;
+  }
+  .visualizaciones{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 2rem;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+   }
+  
+  .numeroviews{
+    margin-top: 2px;
+    width: fit-content;
+    height: fit-content;
+ 
+  }
+  .ojo{
+    width: 20px;
+    margin-top: -3px;
+    margin-left: 6px;
+ 
+  }
+  .likes{
+    position: absolute;
+    display: flex;
+    margin-top: -20px;
+    margin-left: 10rem;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+ 
+  }
+  .numerolikes{
+    margin-top: 2px;
+    width: fit-content;
+    height: fit-content;
+ 
+  }
+  .megusta{
+    width: 20px;
+    margin-top: -3px;
+    margin-left: 6px;
+ 
+  }
+  .comentarios{
+    position: absolute;
+    display: flex;
+    margin-top: -1.3rem;
+    margin-left: 17.5rem;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+ 
+  }
+  .numerocomentarios{
+    margin-top: 2px;
+    width: fit-content;
+    height: fit-content;
+ 
+  }
+  .comentario{
+    width: 20px;
+    margin-top: -3px;
+    margin-left: 6px;
+ 
+  }
+  .compartidos{
+    position: absolute;
+    display: flex;
+    margin-top: -1.2rem;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 23.5rem;
+ 
+  }
+  .numerocompartidos{
+    margin-top: -1px;
+    width: fit-content;
+    height: fit-content;
+ 
+
+  }
+  .Logocompartidos{
+    width: 20px;
+    margin-top: -3px;
+    margin-left: 6px;
+  }
+  /*entrada2*/
+  .entrada2{
+    position: absolute;
+    margin-top: -27.1rem;
+    background-color: rgb(10, 59, 99);
+    padding-bottom: 30px;
+    margin-right: 70rem;
+    margin-left: 36rem;
+  }
+  .fotoentrada2{
+    margin-top: 50px;
+    width: 18rem;
+    height: 10rem;
+    border: solid 2px black;
+    margin-left: 90px;
+    margin-right: 60px;
+   }
+  .creador2{
+    position: absolute; /* Posicionamiento absoluto respecto de .entrada1 */
+    margin-top: 14.5rem;
+    margin-left: -25.5rem;
+    cursor: pointer;
+ 
+  }
+  .fecha2{
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: 2.2rem;
+    color: rgb(255, 255, 255);
+    width: fit-content;
+ 
+  }
+  .TiempoLectura2{
+    position: absolute;
+    margin-top:3rem;
+    margin-left: 13.5rem;
+    color: rgb(255, 255, 255);
+    width: fit-content;
+  }
+  .titloentrada2{
+    position: absolute;
+    margin-top: 10px;
+    font-size: 25px;
+    margin-left: 5.1rem;
+    color: rgb(255, 255, 255);
+     width: fit-content;
+    height: fit-content;
+  }
+  .descripcion2{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    margin-top: 4.8rem;
+    margin-left: 2rem;
+    text-align: center;
+    margin-right: 1rem;
+  }
+  .lineaFinal2{
+    border-top: 1px solid white;
+    margin: 20px auto 0;
+    width: 85%;
+    margin-left: 2rem;
+    margin-top: 9rem;
+  }
+  .visualizaciones2{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 2rem;
+    color: rgb(255, 255, 255);
+    width: fit-content;
+    height: fit-content;
+   }
+  
+  .numeroviews2{
+    margin-top: 2px;
+    width: fit-content;
+    height: fit-content;
+ 
+  }
+  .ojo2{
+    width: 20px;
+    margin-top: -3px;
+    margin-left: 6px;
+ 
+  }
+  .likes2{
+    position: absolute;
+    display: flex;
+    margin-top: -20px;
+    margin-left: 10rem;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+ 
+  }
+  .numerolikes2{
+    margin-top: 2px;
+    width: fit-content;
+    height: fit-content;
+ 
+  }
+  .megusta2{
+    width: 20px;
+    margin-top: -3px;
+    margin-left: 6px;
+ 
+  }
+  .comentarios2{
+    position: absolute;
+    display: flex;
+    margin-top: -1.3rem;
+    margin-left: 17.5rem;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+ 
+  }
+  .numerocomentarios2{
+    margin-top: 2px;
+    width: fit-content;
+    height: fit-content;
+ 
+  }
+  .comentario2{
+    width: 20px;
+    margin-top: -3px;
+    margin-left: 6px;
+ 
+  }
+  .compartidos2{
+    position: absolute;
+    display: flex;
+    margin-top: -1.2rem;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 23.5rem;
+ 
+  }
+  .numerocompartidos2{
+    margin-top: -1px;
+    width: fit-content;
+    height: fit-content;
+ 
+
+  }
+  .Logocompartidos2{
+    width: 20px;
+    margin-top: -3px;
+    margin-left: 6px;
+  }
+  /*entrada 3*/
+  .entrada3{
+    position: absolute;
+    margin-top: -27.1rem;
+    background-color: rgb(10, 59, 99);
+    padding-bottom: 30px;
+    margin-right: 70rem;
+    margin-left: 70rem;
+  }
+  .fotoentrada3{
+    margin-top: 50px;
+    width: 18rem;
+    height: 10rem;
+    border: solid 2px black;
+    margin-left: 90px;
+    margin-right: 60px;
+   }
+  .creador3{
+    position: absolute; /* Posicionamiento absoluto respecto de .entrada1 */
+    margin-top: 14.6rem;
+    margin-left: -25.5rem;
+    cursor: pointer;
+ 
+  }
+  .fecha3{
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: 2.2rem;
+    color: rgb(255, 255, 255);
+    width: fit-content;
+ 
+  }
+  .TiempoLectura3{
+    position: absolute;
+    margin-top:3rem;
+    margin-left: 13.5rem;
+    color: rgb(255, 255, 255);
+    width: fit-content;
+  }
+  .titloentrada3{
+    position: absolute;
+    margin-top: 10px;
+    font-size: 25px;
+    margin-left: 7.5rem;
+    color: rgb(255, 255, 255);
+     width: fit-content;
+    height: fit-content;
+  }
+  .descripcion3{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    margin-top:4.5rem;
+    margin-left: 2rem;
+    text-align: center;
+    margin-right: 1rem;
+  }
+  .lineaFinal3{
+    border-top: 1px solid white;
+    margin: 20px auto 0;
+    width: 85%;
+    margin-left: 2rem;
+    margin-top: 8.9rem;
+  }
+  .visualizaciones3{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 2rem;
+    color: rgb(255, 255, 255);
+    width: fit-content;
+    height: fit-content;
+   }
+  
+  .numeroviews3{
+    margin-top: 2px;
+    width: fit-content;
+    height: fit-content;
+ 
+  }
+  .ojo3{
+    width: 20px;
+    margin-top: -3px;
+    margin-left: 6px;
+ 
+  }
+  .likes3{
+    position: absolute;
+    display: flex;
+    margin-top: -20px;
+    margin-left: 10rem;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+ 
+  }
+  .numerolikes3{
+    margin-top: 2px;
+    width: fit-content;
+    height: fit-content;
+ 
+  }
+  .megusta3{
+    width: 20px;
+    margin-top: -3px;
+    margin-left: 6px;
+ 
+  }
+  .comentarios3{
+    position: absolute;
+    display: flex;
+    margin-top: -1.3rem;
+    margin-left: 17.5rem;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+ 
+  }
+  .numerocomentarios3{
+    margin-top: 2px;
+    width: fit-content;
+    height: fit-content;
+ 
+  }
+  .comentario3{
+    width: 20px;
+    margin-top: -3px;
+    margin-left: 6px;
+ 
+  }
+  .compartidos3{
+    position: absolute;
+    display: flex;
+    margin-top: -1.2rem;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 23.5rem;
+ 
+  }
+  .numerocompartidos3{
+    margin-top: -1px;
+    width: fit-content;
+    height: fit-content;
+ 
+
+  }
+  .Logocompartidos3{
+    width: 20px;
+    margin-top: -3px;
+    margin-left: 6px;
+  }
+
+  /*fin de entradas*/
+
+  /*Servicios*/
+  
+  .tituloServicios{
+    font-size: 30px;
+    margin-left: 45rem;
+    margin-top: 10px;
+    font-family: 'Georgia', sans-serif;
+    font-weight: bold;
+  }
+  .descripcionServicios{
+    margin-left:39rem;
+    font-family: 'Georgia', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+  }
+  /*tarjeta 1*/
+  .tarjeta1{
+    background-color: black;
+    margin-top: 10px;
+    padding-top: 1px;
+    padding-bottom: 30px;
+    margin-left: 2rem;
+    margin-right: 1.4rem;
+  }
+  .tituloservicio{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    color: rgb(255, 255, 255);
+    margin-top: 40px;
+    margin-left: 52rem;
+    font-size: 40px;
+  }
+  .ImgServicio1{
+    width: 25rem;
+    margin-top: 3rem;
+    margin-left: 6rem;
+  }
+  .descricionServicio{
+    position: absolute;
+    margin-top: -18rem;
+    color: rgb(255, 255, 255);
+    margin-left: 40rem;
+    margin-right: 10px;
+    text-align: center;
+    margin-right: 6rem;
+    font-size: 20px;
+
+  }
+  .MasInformación{
+    position: absolute;
+    background-color: rgb(141, 129, 61);
+    margin-top: 20rem;
+    margin-left: 25rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-decoration: none;
+
+  }
+  .MasInformación:hover{
+    background-color: rgb(93, 83, 35);
+  }
+  /*fin tarjeta 1*/
+
+  /*tarjeta 2 */
+  
+  .tarjeta2{
+    position: absolute;
+    background-color: black;
+    margin-top: 1rem;
+    padding-top: 1px;
+    padding-bottom: 160px;
+    margin-left: 2rem;
+    margin-right: 1rem;
+  }
+  .tituloservicio2{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    color: rgb(255, 255, 255);
+    margin-top: 12px;
+    margin-left: 11rem;
+    font-size: 23px;
+  }
+  .ImgServicio2{
+    width: 15rem;
+    margin-top: 3rem;
+    margin-left: 7rem;
+    margin-right: 5.7rem;
+  }
+  .descricionServicio2{
+    position: absolute;
+    margin-top: 1rem;
+    color: rgb(255, 255, 255);
+    margin-left: 2rem;
+    margin-right: 10px;
+    text-align: center;
+    margin-right: 2rem;
+
+  }
+  .MasInformación2{
+    position: absolute;
+    background-color: rgb(141, 129, 61);
+    margin-top: 25.5rem;
+    margin-left: -18rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+
+  }
+  .MasInformación2:hover{
+    background-color: rgb(93, 83, 35);
+  }
+  /*fin tarjeta 2*/
+  /*tarjeta 3*/
+  .tarjeta3{
+    position: absolute;
+    background-color: black;
+    margin-top: 1rem;
+    padding-top: 1px;
+    padding-bottom:168px;
+    margin-left: 42rem;
+    margin-right: 1rem;
+  }
+  .tituloservicio3{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    color: rgb(255, 255, 255);
+    margin-top: 12px;
+    margin-left: 1rem;
+    font-size: 20px;
+  }
+  .ImgServicio3{
+    width: 10rem;
+    margin-top: 3rem;
+    margin-left: 6rem;
+    margin-right: 5.7rem;
+  }
+  .descricionServicio3{
+    position: absolute;
+    margin-top: 1rem;
+    color: rgb(255, 255, 255);
+    margin-left: 2rem;
+    margin-right: 10px;
+    text-align: center;
+    margin-right: 2rem;
+
+  }
+  .MasInformación3{
+    position: absolute;
+    background-color: rgb(141, 129, 61);
+    margin-top: 25.5rem;
+    margin-left: -16rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+
+  }
+  .MasInformación3:hover{
+    background-color: rgb(93, 83, 35);
+  }
+  /*fin de tarjeta 3*/
+  /*tarjeta 4*/
+  .tarjeta4{
+    position: absolute;
+    background-color: black;
+    margin-top: 1rem;
+    padding-top: 1px;
+    padding-bottom: 150px;
+    margin-left: 75rem;
+    margin-right: 2rem;
+  }
+  .tituloservicio4{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    color: rgb(255, 255, 255);
+    margin-top: 15px;
+    margin-left: 1rem;
+    font-size: 18px;
+  }
+  .ImgServicio4{
+    width: 10rem;
+    margin-top: 3rem;
+    margin-left: 7rem;
+    margin-right: 5.7rem;
+  }
+  .descricionServicio4{
+    position: absolute;
+    margin-top: 1rem;
+    color: rgb(255, 255, 255);
+    margin-left: 2rem;
+    margin-right: 10px;
+    text-align: center;
+    margin-right: 2rem;
+
+  }
+  .MasInformación4{
+    position: absolute;
+    background-color: rgb(141, 129, 61);
+    margin-top: 6.8rem;
+    margin-left: 7.5rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+
+  }
+  .MasInformación4:hover{
+    background-color: rgb(93, 83, 35);
+  }
+  
+  /*fin de tarjeta 4*/
+
+  /*Sección de contacto*/
+  .Contactoñ{
+    position: absolute;
+
+  }
+  .tituloContacto{
+    font-size: 30px;
+    margin-top: 30rem;
+    margin-left: 46rem;
+    font-family: 'Georgia', sans-serif;
+    font-weight: bold;
+    
+  }
+  .descripcionContacto{
+    margin-top: 1rem;
+    margin-left: 25rem;
+    font-family: 'Georgia', sans-serif;
+    font-weight: bold;
+  }
+  .correo1{
+    width: fit-content;
+    margin-top: 20px;
+    margin-left: 35rem;
+  }
+  .correo2{
+    width: fit-content;
+    margin-top: 10px;
+    margin-left: 35rem;
+  }
+  .logoCorreo{
+    width: 70px;
+    margin-top: -80px;
+    margin-left: 30rem;
+  }
+
+  .numero1{
+    position: absolute;
+
+    width: fit-content;
+    margin-top: -2.2rem;
+    margin-left: 65rem;
+  }
+  .numero2{
+    position: absolute;
+    width: fit-content;
+    margin-top: -4rem;
+    margin-left: 65rem;
+  }
+  .logoTelefono{
+    width: 70px;
+    margin-top: -80px;
+    margin-left: 36rem;
+  }
+  /*fin de contacto*/
+  
+  /*boton para comunicarse */
+  .botonWhats {
+  position: fixed;
+  bottom: 50px; /* O el valor que prefieras */
+  right: 10px;
+  width: 50px;
+  border: none;
+  background: rgb(21, 31, 102);
+  cursor: pointer;
+  border-radius: 10px;
+  z-index: 9999;    /* Asegura que esté encima de otros elementos */
+  }
+  /*fin del boton*/
+  
+  /*parte final de la pagina*/
+  .ultimoo{
+    
+    background-color: black;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    
+  }
+  .logoDerecho{
+    color: white;
+    margin-top: 10px;
+    margin-left: 3rem;
+    width: fit-content;
+
+  }
+  .derechos{
+    color: white;
+    margin-left: 5rem;
+    margin-top: -18px;
+  }
+  .titulo2{
+    color: white;
+    width: fit-content;
+    margin-left: 45rem;
+    margin-top: -18px;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+}
+
