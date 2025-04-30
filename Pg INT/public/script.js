@@ -222,7 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initComentarios('.FormularioComen', '#comentario', '.ContenedorComentarios', 'mis_comentarios_storage1', '.numerocomentarios');
   initComentarios('.FormularioComen2', '#comentario2', '.ContenedorComentarios2', 'mis_comentarios_storage2', '.numerocomentarios2');
   initComentarios('.FormularioComen3', '#comentario3', '.ContenedorComentarios3', 'mis_comentarios_storage3', '.numerocomentarios3');
-  initCompartir('.Logocompartidos', '.ContenidoCopiado', './blog_SInformatico.html');
-  initCompartir('.Logocompartidos2', '.ContenidoCopiado2', './blog_CSeguridad.html');
-  initCompartir('.Logocompartidos3', '.ContenidoCopiado3', './blog_Telecomunicacioness.html');
+  initCompartir('.Logocompartidos', '.ContenidoCopiado', 'https://www.int-solutionstec.com/blog_SInformatico.html');
+  initCompartir('.Logocompartidos2', '.ContenidoCopiado2', 'https://www.int-solutionstec.com/blog_CSeguridad.html');
+  initCompartir('.Logocompartidos3', '.ContenidoCopiado3', 'https://www.int-solutionstec.com/blog_Telecomunicaciones.html');
 });
