@@ -16,6 +16,18 @@ function createContactModal() {
     alignItems: 'center',
     zIndex: '1000'
   });
+const toast = document.getElementById('promoToast');
+
+// Mostrar el toast después de 1 segundo
+setTimeout(() => {
+  toast.classList.add('show');
+}, 1000);
+
+// Ocultar el toast después de 10 segundos
+setTimeout(() => {
+  toast.classList.remove('show');
+  toast.classList.add('hide');
+}, 11000);
 
   // Modal container
   const modal = document.createElement('div');
@@ -227,15 +239,3 @@ document.addEventListener('DOMContentLoaded', () => {
   initCompartir('.Logocompartidos3', '.ContenidoCopiado3', 'https://www.int-solutionstec.com/blog_Telecomunicaciones.html');
 });
 
-const toast = document.getElementById('promoToast');
-
-// Mostrar el toast después de 1 segundo
-setTimeout(() => {
-  toast.classList.add('show');
-}, 1000);
-
-// Ocultar el toast después de 10 segundos
-setTimeout(() => {
-  toast.classList.remove('show');
-  toast.classList.add('hide');
-}, 11000);
