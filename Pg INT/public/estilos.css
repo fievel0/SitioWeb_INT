@@ -1,3 +1,6 @@
+.toast{
+  border: solid 2px red
+}
 /* Estilos generales */
 body {
   margin: 0;
