@@ -226,3 +226,16 @@ document.addEventListener('DOMContentLoaded', () => {
   initCompartir('.Logocompartidos2', '.ContenidoCopiado2', 'https://www.int-solutionstec.com/blog_CSeguridad.html');
   initCompartir('.Logocompartidos3', '.ContenidoCopiado3', 'https://www.int-solutionstec.com/blog_Telecomunicaciones.html');
 });
+
+const toast = document.getElementById('promoToast');
+
+// Mostrar el toast después de 1 segundo
+setTimeout(() => {
+  toast.classList.add('show');
+}, 1000);
+
+// Ocultar el toast después de 10 segundos
+setTimeout(() => {
+  toast.classList.remove('show');
+  toast.classList.add('hide');
+}, 11000);
