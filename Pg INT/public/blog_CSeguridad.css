@@ -1317,15 +1317,12 @@ z-index: 9999;    /* Asegura que esté encima de otros elementos */
    
     }
     .OtrasEntradas{
-      margin-top: 1rem;
-      margin-left: 2rem;
-      color: rgb(0, 0, 0);
-      width: fit-content;
-      text-align: center;
-      font-size: 25px;
-      margin-right: 10px;
-      font-weight: bold;
-    }  
+        font-size: 30px;
+        margin-top: 10px;
+        font-family: 'Georgia', sans-serif;
+        font-weight: bold;
+        text-align: center;
+      }
   /*entrada2*/
   .entrada2 {
     margin: 20px auto;
@@ -2004,15 +2001,12 @@ z-index: 9999;    /* Asegura que esté encima de otros elementos */
    
     }
     .OtrasEntradas{
-      margin-top: 1rem;
-      margin-left: 2rem;
-      color: rgb(0, 0, 0);
-      width: fit-content;
-      text-align: center;
-      font-size: 25px;
-      margin-right: 10px;
-      font-weight: bold;
-    }  
+        font-size: 30px;
+        margin-top: 10px;
+        font-family: 'Georgia', sans-serif;
+        font-weight: bold;
+        text-align: center;
+      }
   /*entrada2*/
   .entrada2 {
     margin: 20px auto;
@@ -2723,15 +2717,12 @@ z-index: 9999;    /* Asegura que esté encima de otros elementos */
    
     }
     .OtrasEntradas{
-      margin-top: 1rem;
-      margin-left: 2rem;
-      color: rgb(0, 0, 0);
-      width: fit-content;
-      text-align: center;
-      font-size: 25px;
-      margin-right: 10px;
-      font-weight: bold;
-    }  
+        font-size: 30px;
+        margin-top: 10px;
+        font-family: 'Georgia', sans-serif;
+        font-weight: bold;
+        text-align: center;
+      }
   /*entrada2*/
   .entrada2 {
     margin: 20px auto;
@@ -3023,6 +3014,5 @@ z-index: 9999;    /* Asegura que esté encima de otros elementos */
   }
   
 }
-
 
 
