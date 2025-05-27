@@ -2722,11 +2722,11 @@ nav ul li:hover a::after {
 /* Contenedor flexible */
 .contenedor-entradas {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  padding: 10px;
   justify-content: center;
   align-items: stretch;
+  padding: 10px;
 }
 
 /* Estilo general de cada entrada */
@@ -2788,11 +2788,13 @@ nav ul li:hover a::after {
 }
 
 /* Contenedor flexible para los servicios */
-.contenedor-servicios {
+.contenedor-servicios{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 50px;
-  text-align: left;
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+  padding: 10px;
 }
 
 .servicio {
