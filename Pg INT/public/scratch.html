@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>¡Curso de Scratch - Próximamente!</title>
+  <link rel="icon" href="./gato3.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Fredoka', sans-serif;
+      background: linear-gradient(135deg, #ffe259, #ffa751);
+      color: #333;
+      min-height: 100vh;
+      padding: 2rem;
+      position: relative;
+    }
+
+    .volver-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: #ff6f00;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.95rem;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .volver-btn:hover {
+      background-color: #e55c00;
+      transform: scale(1.05);
+    }
+
+    .container {
+      background-color: #fffaf4;
+      padding: 3rem 2rem;
+      border-radius: 25px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      width: 100%;
+      margin: 5rem auto 0 auto;
+      text-align: center;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .container img {
+      width: 150px;
+      margin-bottom: 1.5rem;
+    }
+
+    .container h1 {
+      font-size: 2.8rem;
+      color: #ff6f00;
+      margin-bottom: 1rem;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .container p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .container ul {
+      list-style: none;
+      padding-left: 0;
+      text-align: left;
+      margin: 1rem 0 1.5rem 0;
+      font-size: 1.1rem;
+    }
+
+    .container ul li {
+      margin-bottom: 0.6rem;
+    }
+
+    .date {
+      font-weight: bold;
+      color: #ff6f61;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group input {
+      padding: 0.8rem;
+      border: 2px solid #ffd36b;
+      border-radius: 10px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .form-group input:focus {
+      border-color: #ffb300;
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(255, 179, 0, 0.3);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background-color: #ff6f00;
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #e55c00;
+      transform: scale(1.05);
+    }
+
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 2rem 1rem;
+        margin-top: 4rem;
+      }
+
+      .container h1 {
+        font-size: 2.2rem;
+      }
+
+      .container img {
+        width: 120px;
+      }
+
+      .volver-btn {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="https://www.int-solutionstec.com/" class="volver-btn">← Volver</a>
+
+  <div class="container">
+    <img src="./gato3.png" alt="Scratch Cat">
+    <h1>¡Curso de Scratch!</h1>
+
+    <p>🚀 ¡Aprendé a programar con Scratch! 🎮💡<br>
+    ¿Quieres crear tus propios juegos, animaciones y personajes?<br>
+    Con Scratch lo hacés fácil, rápido y ¡divirtiéndote!</p>
+
+    <ul>
+      <li>🎨 Diseñá, animá, programá</li>
+      <li>🧠 Sin experiencia previa</li>
+      <li>🎮 Juegos, historias y desafíos</li>
+      <li>👨‍🏫 Acompañamiento paso a paso</li>
+    </ul>
+
+    <p class="date">🌈 ¡Convertite en creador digital!<br>📅 Lanzamiento: Julio 2025</p>
+
+    
+
+    <div class="footer">🚀 ¡No te lo pierdas! Ideal para principiantes, creativos y futuros programadores.</div>
+  </div>
+</body>
+</html>

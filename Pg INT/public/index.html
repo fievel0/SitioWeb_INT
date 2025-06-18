@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="En Int-solutions ofrecemos servicio técnico, cursos y vendemos artículos para tu celular o computadora. Y más servicios.">
+  <link rel="canonical" href="https://www.int-solutionstec.com/">
+  <title>Servicio Técnico | Int-solutions | Quito</title>
+  <link rel="icon" type="image/png" href="./Imagenes/pnglogo.png">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>  
+  <header class="encabezado">
+    <div class="TYS">
+      <div class="logo">INT-SOLUTIONS</div>
+      <div class="eslogan">Soluciones Inteligentes en Tecnología</div>   
+    </div>
+    <div class="navbar">
+      <!-- Ícono de menú (hamburguesa) -->
+      <div class="menu-icon" id="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- Menú de navegación -->
+      <nav id="menu">
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./servicios.html">Servicios</a></li>
+          <li><a href="./cursos.html">Cursos</a></li>
+          <li><a href="https://equipos.int-solutionstec.com/">Sistema</a></li>
+          <li><a href="./mas.html">Más</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="Cuerpo">
+   <div class="carousel">
+    <div class="slides" id="slides">
+      <div class="slide">
+        <div class="Letras">
+          <div class="titulodos">INT-SOLUTIONS</div>
+          <div class="encabezadodoss">Tu fuente de información</div>
+          <div class="encabezadotres">Para interactuar y saber más, da clic en las siguientes entradas</div>
+        </div>
+        <img class="FondoCuerpo" src="./Imagenes/fondo.jpeg" alt="Fondo 1" loading="lazy">
+      </div>
+      <div class="slide">
+        <div class="Letras">
+          <div class="titulodos">Desarrollo páginas web</div>
+          <div class="encabezadodoss">Transformamos tus ideas en sitios web impactantes que conectan con tus clientes y potencian tu negocio.</div>
+        </div>
+        <img class="FondoCuerpo" src="./Imagenes/desarrolloWeb.webp" alt="Fondo 2" loading="lazy">
+      </div>
+      <div class="slide">
+        <div class="Letras">
+          <div class="titulodos">Software a la medida</div>
+          <div class="encabezadodoss">Aplicaciones hechas específicamente para ti</div>
+        </div>
+        <img class="FondoCuerpo" src="./Imagenes/media.jpg" alt="Fondo 3" loading="lazy">
+      </div>
+    </div>
+    <button class="arrow arrow-left" id="prev" aria-label="Slide anterior">&#10094;</button>
+    <button class="arrow arrow-right" id="next" aria-label="Siguiente slide">&#10095;</button>
+  <div class="dots" id="dots"></div>  
+  </div>
+  </main>
+
+  <!-- Espacio para Promos 
+    
+    <div id="promoToast" class="toast">
+    💻🔥🔥🔥🔥🔥<br>
+    <strong>¡Por apertura!</strong><br>
+    Solo para clientes antiguos o referidos:<br>
+    <span style="font-weight:bold; font-size:18px; color:#0111f1;">2x1 en mantenimiento preventivo</span><br>
+    <span style="font-weight:bold; color:#ff5722;">30% de descuento en mantenimiento correctivo</span><br>
+    😉 ¡Ven y visítanos! ❤️
+    </div>
+    -->
+
+    <!-- Publicidad -->  	
+  <div id="promoToastt" class="toastt">
+  <a href="proximosCursos.html" target="_blank" rel="noopener noreferrer">
+    🎓✨<br>
+    <strong>¡Próximos cursos disponibles!</strong><br>
+    Descubre:<br>
+    <span class="bold-fullstack">• Curso Fullstack Web</span><br>
+    <span class="bold-scratch">• Programación con Scratch para niños</span><br>
+    🚀 ¡Inscríbete y lleva tus habilidades al siguiente nivel! ❤️<br>
+    <!-- Llamada a la acción más visible: -->
+    <span class="learn-more">👉 Haz clic para saber más</span>
+  </a>
+</div>  
+  <!-- Entradas -->
+<div class="entradas">
+  <div class="tituloentradas">Todas las entradas</div>
+
+  <button class="cy" onclick="tuFuncion()">
+    <img class="botonWhats" src="./Imagenes/aplicacion.png" alt="comentario">
+  </button>
+
+  <!-- Contenedor de entradas -->
+  <div class="contenedor-entradas">
+
+    <!-- Entrada 1 -->
+    <div class="entrada">
+      <a href="./blog_SInformatico.html" class="link-views">
+        <h3>Soporte Informático</h3>
+        <img src="./Imagenes/entrada1.png" alt="FotoTecnico">
+        <p>Tener soporte informático ya no es un lujo, es una necesidad. Detrás de cada empresa que funciona sin interrupciones, hay un equipo técnico resolviendo problemas antes de que se noten. ¿Sabes realmente todo lo que puede hacer por ti un buen servicio de soporte? Te sorprendería.</p>
+      </a>
+      <div class="meta">
+        <span class="creador1">INT-SOLUTIONS</span> <br>
+        <span class="fecha">22 de Febrero de 2021</span> <br> 
+        <span class="tiempo">1 Min. de Lectura</span>
+      </div>
+    </div>
+
+    <!-- Entrada 2 -->
+    <div class="entrada">
+      <a href="./blog_CSeguridad.html" class="link-views">
+        <h3>Consultoría Ciberseguridad</h3>
+        <img src="./Imagenes/ciberseguridad.jpg" alt="Ciberseguridad">
+        <p>¿Tu empresa está realmente protegida contra los ataques cibernéticos que acechan a diario? Desde ransomware que bloquea tus datos hasta troyanos que roban tu información bancaria, las amenazas están más cerca de lo que crees. Conocer cómo funcionan estos ataques y aplicar buenas prácticas de seguridad puede marcar la diferencia entre perder todo o mantener tus datos a salvo. ¿Quieres saber cómo blindar tu negocio?</p>
+      </a>
+      <div class="meta">
+        <span class="creadorr2">INT-SOLUTIONS</span> <br>
+        <span class="fecha">22 de Febrero de 2021</span><br>
+        <span class="tiempo">3 Min. de Lectura</span>
+      </div>
+    </div>
+
+    <!-- Entrada 3 -->
+    <div class="entrada">
+      <a href="./blog_Telecomunicaciones.html" class="link-views">
+        <h3>Telecomunicaciones</h3>
+        <img src="./Imagenes/telecomunicaciones.avif" alt="Telecomunicaciones">
+        <p>Las telecomunicaciones son la base invisible que conecta nuestro mundo, desde llamadas y mensajes hasta el acceso a internet en cualquier lugar. Gracias a redes avanzadas y tecnologías como fibra óptica y satélites, podemos comunicarnos sin límites. ¿Sabías que gran parte de la información que usas a diario viaja gracias a estas redes? Descubre por qué entenderlas es clave para aprovechar al máximo la era digital.</p>
+      </a>
+      <div class="meta">
+        <span class="creadorr3">INT-SOLUTIONS</span> <br> 
+        <span class="fecha">22 de Febrero de 2021</span> <br> 
+        <span class="tiempo">2 Min. de Lectura</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <!-- Servicios -->
+<section class="servicios">
+  <h2 class="tituloServicios">Servicios</h2>
+  <p class="descripcionServicios">Disponemos para Nuestros Clientes</p>
+
+  <div class="contenedor-servicios">
+
+    <article class="servicio">
+      <h3>Soporte Técnico</h3>
+      <img src="./Imagenes/Soporte.avif" alt="Soporte Técnico">
+      <p>El soporte técnico para celulares nace para resolver rápidamente las fallas de tus dispositivos, utilizando conocimientos y herramientas especializadas. Contamos con tres niveles de servicio para atender cada problema de forma adecuada y eficaz.</p>
+      <a href="./servicios.html" class="boton-info">Más información</a>
+    </article>
+
+    <article class="servicio">
+      <h3>Cursos</h3>
+      <img src="./Imagenes/cursos.avif" alt="Cursos">
+      <p>Contamos con un equipo de capacitadores expertos en cada área, que se mantienen siempre actualizados con las últimas tecnologías. Gracias a ellos, nuestro personal está preparado para ofrecer soluciones rápidas, efectivas y de calidad ante cualquier problema.</p>
+      <a href="./cursos.html" class="boton-info">Más información</a>
+    </article>
+
+    <article class="servicio">
+      <h3>Venta de Implementos Informáticos</h3>
+      <img src="./Imagenes/implementos.avif" alt="Implementos Informáticos">
+      <p>Encuentra todo lo que necesitas para tus equipos en un solo lugar. Ofrecemos una amplia variedad de productos de calidad, desde accesorios básicos hasta componentes especializados, pensados para mejorar el rendimiento y la funcionalidad de tus dispositivos. </p>
+      <a href="./mas.html" class="boton-info">Más información</a>
+    </article>
+
+    <article class="servicio">
+      <h3>Venta de implementos de Telefonía celular</h3>
+      <img src="./Imagenes/implementos_celular.avif" alt="Implementos de Telefonía">
+      <p>Encuentra artículos de calidad diseñados para mejorar y proteger tu celular. Desde accesorios esenciales hasta complementos innovadores, aquí tienes todo lo que necesitas para mantener tu dispositivo funcionando al máximo y con estilo.</p>
+      <a href="./mas.html" class="boton-info">Más información</a>
+    </article>
+
+  </div>
+</section>
+
+ <div class="seccion-contacto-ubicacion">
+
+  <!-- CONTACTO -->
+<div class="Contactoo">
+  <div class="TituloContactoo">Contacto</div>
+  <div class="descripcionContactoo">
+    Gracias por tu interés en INT-SOLUTIONS. Si quieres saber más, escríbeme y pronto me pondré en contacto.
+  </div>
+
+  <div class="correosContactoo">
+    <strong>Correos</strong>
+    <div class="correoo1">faibol_men19@hotmail.com</div>
+    <div class="correoo2">intsolutionstec@gmail.com</div>
+  </div>
+
+  <div class="numerosContactoo">
+    <strong>Números</strong>
+    <div class="numeroo1">0961306164</div>
+    <div class="numeroo2">0982401789</div>
+  </div>
+
+  <div class="redSocialContactoo">
+    <strong>Red Social</strong><br>
+    <a href="https://www.facebook.com/share/1Aau188kMz/" target="_blank">Int-Solutions QUITO</a>
+  </div>
+</div>
+
+
+  <!-- UBICACIÓN -->
+  <div class="Ubicacioon">
+    <div class="tituloUbicacioon">Ubicación</div>
+    <div class="descripcionUbicacioon">
+      Calderón - Calle Duchicela S/N y 9 de Agosto, sobre "Los Pollos El Granjero", 2do piso.
+    </div>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!4v1750216581382!6m8!1m7!1s-YBpkohSErczNm4Btna-rQ!2m2!1d-0.103176330392388!2d-78.42525181146215!3f357.16188798797435!4f14.041263643316839!5f1.1924812503605782"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+
+</div>
+
+
+  <!-- Footer -->
+
+  <footer class="footer" role="contentinfo" aria-label="Pie de página">
+    <div class="footer-container">
+
+      <section class="footer-section footer-about" aria-labelledby="footer-about-title">
+        <h4 id="footer-about-title">Sobre INT-SOLUTIONS</h4>
+        <p>Somos expertos en soluciones técnicas, cursos y venta de artículos tecnológicos para tu celular o computadora.</p>
+      </section>
+
+      <section class="footer-section footer-nav" aria-labelledby="footer-nav-title">
+        <h4 id="footer-nav-title">Navegación</h4>
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./servicios.html">Servicios</a></li>
+          <li><a href="./cursos.html">Cursos</a></li>
+          <li><a href="./mas.html">Más</a></li>
+        </ul>
+      </section>
+
+      <section class="footer-section footer-contact" aria-labelledby="footer-contact-title">
+        <h4 id="footer-contact-title">Contacto</h4>
+        <p>Email: <a href="mailto:intsolutionstec@gmail.com">intsolutionstec@gmail.com</a></p>
+        <p>Teléfono: <a href="tel:+593961306164">0961306164</a></p>
+        <p>Dirección: Quito, Ecuador</p>
+      </section>
+
+      <section class="footer-section footer-social" aria-labelledby="footer-social-title">
+        <h4 id="footer-social-title">Redes Sociales</h4>
+        <a href="https://www.facebook.com/share/1Aau188kMz/" target="_blank" rel="noopener" aria-label="Facebook INT-SOLUTIONS" title="Facebook INT-SOLUTIONS">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="#1877F2">
+            <path d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.466.099 2.797.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.312h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.326-.597 1.326-1.326V1.326C24 .597 23.403 0 22.675 0z"/>
+          </svg>
+        </a>
+      </section>
+
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 INT-SOLUTIONS. Todos los derechos reservados.</p>
+      <p>Desarrollado por <a href="https://www.instagram.com/sebas_b0?igsh=NTVzY2dyNWgyZW94" target="_blank" rel="noopener">Sebastian Betancourt</a></p>
+    </div>
+  </footer>
+   <script src="./script.js"></script>
+</body>
+</html>
