@@ -9,6 +9,249 @@
   <title>Servicio Técnico | Int-solutions | Quito</title>
   <link rel="icon" type="image/png" href="./Imagenes/pnglogo.png">
   <link rel="stylesheet" href="estilos.css">
+
+  <style>
+    /* Reset básico para listas */
+    ul {
+      padding-left: 0;
+      list-style: none;
+      margin: 0;
+    }
+
+    /* --- NUEVOS ESTILOS SECCIÓN SERVICIOS --- */
+    .servicios-nosotros {
+      background: #f0f6ff;
+      padding: 60px 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #1a1a1a;
+    }
+
+    .servicios-nosotros .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .servicios-nosotros h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #0047ab;
+      letter-spacing: 1.2px;
+    }
+
+    .servicios-nosotros p.subtitle {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 50px;
+    }
+
+    /* Grid de servicios */
+    .servicios-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+      gap: 30px;
+    }
+
+    .servicio-item {
+      background: #fff;
+      padding: 25px 20px;
+      border-radius: 15px;
+      box-shadow: 0 8px 24px rgba(0,71,171,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      cursor: default;
+    }
+    .servicio-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 14px 32px rgba(0,71,171,0.3);
+    }
+
+    /* Icono decorativo */
+    .servicio-icon {
+      flex-shrink: 0;
+      width: 50px;
+      height: 50px;
+      background: #0047ab;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 24px;
+      box-shadow: 0 4px 10px rgba(0,71,171,0.4);
+    }
+
+    /* Texto del servicio */
+    .servicio-texto {
+      flex-grow: 1;
+    }
+    .servicio-texto h3 {
+      margin: 0 0 8px;
+      font-size: 1.2rem;
+      color: #003a8c;
+      font-weight: 700;
+    }
+    .servicio-texto p {
+      margin: 0;
+      color: #444;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+
+    /* Sección ¿Por qué elegirnos? */
+    .por-que-elegirnos {
+      margin-top: 60px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+    .por-que-elegirnos h2 {
+      color: #0047ab;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      font-weight: 700;
+    }
+    .por-que-elegirnos ul {
+      list-style: none;
+      padding-left: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .por-que-elegirnos ul li {
+      background: #dbe9ff;
+      color: #003a8c;
+      padding: 12px 20px;
+      border-radius: 25px;
+      font-weight: 600;
+      box-shadow: 0 4px 10px rgba(0,71,171,0.15);
+      flex: 1 1 200px;
+      max-width: 300px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 1rem;
+    }
+    .por-que-elegirnos ul li::before {
+      content: "✔️";
+      font-size: 1.2rem;
+    }
+
+    /* Contacto final */
+    .servicios-contacto {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 1.1rem;
+      color: #0047ab;
+      font-weight: 600;
+    }
+    .servicios-contacto a {
+      color: #0072ff;
+      text-decoration: none;
+      font-weight: 700;
+      margin: 0 5px;
+    }
+    .servicios-contacto a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .servicio-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .servicio-icon {
+        margin-bottom: 15px;
+      }
+      .por-que-elegirnos ul {
+        flex-direction: column;
+      }
+      .por-que-elegirnos ul li {
+        max-width: 100%;
+      }
+    }
+      .por-que-elegirnos {
+      max-width: 900px;
+      margin: 60px auto 80px;
+      text-align: center;
+      padding: 0 15px;
+    }
+
+    .por-que-elegirnos h2 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #0047ab;
+      margin-bottom: 40px;
+      letter-spacing: 1.2px;
+    }
+
+    .razones-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+    }
+
+    .razon-item {
+      background: #fff;
+      padding: 25px 20px;
+      border-radius: 18px;
+      box-shadow: 0 8px 20px rgba(0, 71, 171, 0.12);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: default;
+      outline-offset: 4px;
+    }
+
+    .razon-item:focus,
+    .razon-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 36px rgba(0, 71, 171, 0.25);
+    }
+
+    .razon-icon {
+      font-size: 3rem;
+      color: #0047ab;
+      margin-bottom: 18px;
+      user-select: none;
+    }
+
+    .razon-item h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: #003a8c;
+    }
+
+    .razon-item p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      .por-que-elegirnos h2 {
+        font-size: 1.8rem;
+      }
+      .razon-icon {
+        font-size: 2.5rem;
+      }
+      .razon-item h3 {
+        font-size: 1.1rem;
+      }
+      .razon-item p {
+        font-size: 0.95rem;
+      }
+    }
+  
+  </style>
 </head>
 
 <body>  
@@ -18,77 +261,149 @@
       <div class="eslogan">Soluciones Inteligentes en Tecnología</div>   
     </div>
     <div class="navbar">
-      <!-- Ícono de menú (hamburguesa) -->
       <div class="menu-icon" id="menu-icon">
         <span></span>
         <span></span>
         <span></span>
       </div>
-      <!-- Menú de navegación -->
       <nav id="menu">
         <ul>
           <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./nosotros.html">Nosotros</a></li> 
           <li><a href="./servicios.html">Servicios</a></li>
           <li><a href="./cursos.html">Cursos</a></li>
           <li><a href="https://equipos.int-solutionstec.com/">Sistema</a></li>
           <li><a href="./mas.html">Más</a></li>
+
         </ul>
       </nav>
     </div>
   </header>
-  <!-- Body -->
+
+  
+
+  <!-- NUEVA SECCIÓN DE NUESTROS SERVICIOS -->
+  <section class="servicios-nosotros" aria-label="Nuestros servicios">
+    <div class="container">
+      <h2>🔹 Nuestros Servicios</h2>
+      <p class="subtitle">Ofrecemos una amplia variedad de servicios técnicos y tecnológicos adaptados a tus necesidades.</p>
+
+      <div class="servicios-grid">
+        <article class="servicio-item" tabindex="0">
+          <div class="servicio-icon" aria-hidden="true">🖥️</div>
+          <div class="servicio-texto">
+            <h3>Reparación de computadoras y laptops</h3>
+            <p>Diagnóstico, limpieza, cambio de componentes y optimización de software.</p>
+          </div>
+        </article>
+
+        <article class="servicio-item" tabindex="0">
+          <div class="servicio-icon" aria-hidden="true">📱</div>
+          <div class="servicio-texto">
+            <h3>Servicio técnico para celulares</h3>
+            <p>Reparación de pantallas, cambio de baterías, solución de fallas de carga y más.</p>
+          </div>
+        </article>
+
+        <article class="servicio-item" tabindex="0">
+          <div class="servicio-icon" aria-hidden="true">📷</div>
+          <div class="servicio-texto">
+            <h3>Instalación y mantenimiento de cámaras</h3>
+            <p>Configuración, monitoreo y reparación de sistemas de videovigilancia.</p>
+          </div>
+        </article>
+
+        <article class="servicio-item" tabindex="0">
+          <div class="servicio-icon" aria-hidden="true">💾</div>
+          <div class="servicio-texto">
+            <h3>Recuperación de datos</h3>
+            <p>Rescate de información desde discos duros, memorias y dispositivos móviles.</p>
+          </div>
+        </article>
+
+        <article class="servicio-item" tabindex="0">
+          <div class="servicio-icon" aria-hidden="true">🛒</div>
+          <div class="servicio-texto">
+            <h3>Venta de repuestos y accesorios</h3>
+            <p>Cargadores, pantallas, teclados, discos duros, baterías y más.</p>
+          </div>
+        </article>
+      </div>
+
+      <section class="por-que-elegirnos" aria-label="Por qué elegirnos">
+        <h2>💡 ¿Por qué elegirnos?</h2>
+        <div class="razones-grid">
+          <article class="razon-item" tabindex="0">
+            <div class="razon-icon">⚡</div>
+            <h3>Atención rápida y confiable</h3>
+            <p>Respuesta ágil y soporte que siempre está a tu lado.</p>
+          </article>
+          <article class="razon-item" tabindex="0">
+            <div class="razon-icon">👨‍🔧</div>
+            <h3>Técnicos capacitados y con experiencia</h3>
+            <p>Profesionales certificados para garantizar calidad.</p>
+          </article>
+          <article class="razon-item" tabindex="0">
+            <div class="razon-icon">💰</div>
+            <h3>Precios accesibles y garantía</h3>
+            <p>Servicios de calidad con tarifas justas y garantía incluida.</p>
+          </article>
+          <article class="razon-item" tabindex="0">
+            <div class="razon-icon">🏠</div>
+            <h3>Atención a domicilio disponible</h3>
+            <p>Comodidad y confianza en la comodidad de tu hogar.</p>
+          </article>
+        </div>
+      </section>
 
 
-
- <div class="seccion-contacto-ubicacion">
-
-  <!-- CONTACTO -->
-<div class="Contactoo">
-  <div class="TituloContactoo">Contacto</div>
-  <div class="descripcionContactoo">
-    Gracias por tu interés en INT-SOLUTIONS. Si quieres saber más, escríbeme y pronto me pondré en contacto.
-  </div>
-
-  <div class="correosContactoo">
-    <strong>Correos</strong>
-    <div class="correoo1">faibol_men19@hotmail.com</div>
-    <div class="correoo2">intsolutionstec@gmail.com</div>
-  </div>
-
-  <div class="numerosContactoo">
-    <strong>Números</strong>
-    <div class="numeroo1">0961306164</div>
-    <div class="numeroo2">0982401789</div>
-  </div>
-
-  <div class="redSocialContactoo">
-    <strong>Red Social</strong><br>
-    <a href="https://www.facebook.com/share/1Aau188kMz/" target="_blank">Int-Solutions QUITO</a>
-  </div>
-</div>
-
-
-  <!-- UBICACIÓN -->
-  <div class="Ubicacioon">
-    <div class="tituloUbicacioon">Ubicación</div>
-    <div class="descripcionUbicacioon">
-      Calderón - Calle Duchicela S/N y 9 de Agosto, sobre "Los Pollos El Granjero", 2do piso.
+      
     </div>
-    <div class="map-container">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!4v1750216581382!6m8!1m7!1s-YBpkohSErczNm4Btna-rQ!2m2!1d-0.103176330392388!2d-78.42525181146215!3f357.16188798797435!4f14.041263643316839!5f1.1924812503605782"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+  </section>
+  <div class="seccion-contacto-ubicacion">
+
+    <div class="Contactoo">
+      <div class="TituloContactoo">Contacto</div>
+      <div class="descripcionContactoo">
+        Gracias por tu interés en INT-SOLUTIONS. Si quieres saber más, escríbeme y pronto me pondré en contacto.
+      </div>
+
+      <div class="correosContactoo">
+        <strong>Correos</strong>
+        <div class="correoo1">faibol_men19@hotmail.com</div>
+        <div class="correoo2">intsolutionstec@gmail.com</div>
+      </div>
+
+      <div class="numerosContactoo">
+        <strong>Números</strong>
+        <div class="numeroo1">0961306164</div>
+        <div class="numeroo2">0982401789</div>
+      </div>
+
+      <div class="redSocialContactoo">
+        <strong>Red Social</strong><br>
+        <a href="https://www.facebook.com/share/1Aau188kMz/" target="_blank">Int-Solutions QUITO</a>
+      </div>
     </div>
+
+    <div class="Ubicacioon">
+      <div class="tituloUbicacioon">Ubicación</div>
+      <div class="descripcionUbicacioon">
+        Calderón - Calle Duchicela S/N y 9 de Agosto, sobre "Los Pollos El Granjero", 2do piso.
+      </div>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!4v1750216581382!6m8!1m7!1s-YBpkohSErczNm4Btna-rQ!2m2!1d-0.103176330392388!2d-78.42525181146215!3f357.16188798797435!4f14.041263643316839!5f1.1924812503605782"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
   </div>
-
-</div>
-
 
   <!-- Footer -->
-
   <footer class="footer" role="contentinfo" aria-label="Pie de página">
     <div class="footer-container">
 
@@ -123,7 +438,6 @@
         </a>
       </section>
 
-
     </div>
 
     <div class="footer-bottom">
@@ -131,6 +445,7 @@
       <p>Desarrollado por <a href="https://www.instagram.com/sebas_b0?igsh=NTVzY2dyNWgyZW94" target="_blank" rel="noopener">Sebastian Betancourt</a></p>
     </div>
   </footer>
-   <script src="./script.js"></script>
+
+  <script src="./script.js"></script>
 </body>
 </html>
