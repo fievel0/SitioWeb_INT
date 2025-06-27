@@ -4,37 +4,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Próximos Cursos</title>
-  <link rel="icon" href="./gato3.png" type="image/png">
+  <link rel="icon" href="./Imagenes/pnglogo.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
   <meta name="robots" content="index, follow">
   <meta name="description" content="En Int-solutions ofrecemos servicio técnico, cursos y vendemos artículos para tu celular o computadora. Y más servicios.">
   <link rel="canonical" href="https://www.int-solutionstec.com/">
-  <title>Servicio Técnico | Int-solutions | Quito</title>
-  <link rel="icon" type="image/png" href="./Imagenes/pnglogo.png">
+  
   <style>
-    /* --------------------- ESTILOS GENERALES --------------------- */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
     html {
-      scroll-behavior: smooth; /* Para navegación entre secciones */
+      scroll-behavior: smooth;
     }
     body {
       font-family: 'Fredoka', sans-serif;
       background: #f5f5f5;
       color: #333;
       min-height: 100vh;
-      position: relative;
-      padding-top: 70px; /* Espacio para la barra de navegación fija */
+      padding-top: 70px;
     }
     a {
       text-decoration: none;
       color: inherit;
     }
 
-    /* ------------------ BARRA DE NAVEGACIÓN FIJA ------------------ */
     .navbar {
       position: fixed;
       top: 0;
@@ -69,7 +65,6 @@
       background-color: #e0e0e0;
     }
 
-    /* --------------------- BOTÓN VOLVER --------------------- */
     .volver-btn {
       background-color: #ff6f00;
       color: white;
@@ -84,7 +79,6 @@
       transform: scale(1.05);
     }
 
-    /* -------------- CONTENEDOR COMÚN (AJUSTES) -------------- */
     .container {
       background-color: #fff;
       padding: 3rem 2rem;
@@ -95,7 +89,6 @@
       margin: 5rem auto;
       text-align: center;
       animation: fadeIn 1.2s ease-in-out;
-margin-top: 5rem;
     }
     .container img {
       margin-bottom: 1.5rem;
@@ -156,10 +149,27 @@ margin-top: 5rem;
       to { opacity: 1; transform: translateY(0); }
     }
 
+    .video-responsive {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      overflow: hidden;
+      margin: 1.5rem 0;
+    }
+    .video-responsive iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
     @media (max-width: 600px) {
       .container {
         padding: 2rem 1rem;
-        margin-top: 4rem;
+        margin-top: 3rem;
       }
       .container h1 {
         font-size: 2rem;
@@ -180,15 +190,13 @@ margin-top: 5rem;
       }
     }
 
-    /* --------------- SECCIÓN SCRATCH --------------- */
     .scratch-section {
       background: linear-gradient(135deg, #ffe259, #ffa751);
       padding-bottom: 4rem;
-       margin-top: -5.5rem; 
+      margin-top: -5.5rem;
     }
     .scratch-section .container {
       background-color: #fffaf4;
-        
     }
     .scratch-section .container img {
       width: 150px;
@@ -201,18 +209,16 @@ margin-top: 5rem;
       color: #ff6f61;
     }
 
-    /* --------------- SECCIÓN FULLSTACK --------------- */
     .fullstack-section {
       background: linear-gradient(135deg, #00c6ff, #0072ff);
       padding-bottom: 4rem;
-        margin-top: -5rem;
+      margin-top: -5rem;
     }
     .fullstack-section .container {
       background-color: #f4f9ff;
     }
     .fullstack-section .container img {
       width: 140px;
-
     }
     .fullstack-section .container h1 {
       font-size: 2.6rem;
@@ -227,17 +233,11 @@ margin-top: 5rem;
     .fullstack-section .btn:hover {
       background-color: #002a66;
     }
-    #promoToastt.hide {
-  pointer-events: none; /* No responde a clicks ni eventos */
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
   </style>
 </head>
+
 <body>
 
-  <!-- ========== BARRA DE NAVEGACIÓN FIJA ========== -->
   <nav class="navbar">
     <div class="logo">Próximos Cursos</div>
     <div class="nav-links">
@@ -247,26 +247,41 @@ margin-top: 5rem;
     </div>
   </nav>
 
-  <!-- ========== SECCIÓN SCRATCH ========== -->
+  <!-- SECCIÓN SCRATCH -->
   <section id="scratch" class="scratch-section">
     <div class="container">
       <img src="./Imagenes/gato3.png" alt="Scratch Cat">
-      <h1>¡Curso de Scratch!</h1>
-      <p>🚀 ¡Aprendé a programar con Scratch! 🎮💡<br>
-         ¿Quieres crear tus propios juegos, animaciones y personajes?<br>
-         Con Scratch lo hacés fácil, rápido y ¡divirtiéndote!</p>
+      <h1>Curso Vacacional de Scratch</h1>
+      <p>🧒👧 Para niñas y niños de 8 a 14 años<br>
+         No necesitan conocimientos previos<br>
+         Aprende a programar de forma divertida y práctica.</p>
       <ul>
-        <li>Diseñá, animá, programá</li>
-        <li>Sin experiencia previa</li>
-        <li>Juegos, historias y desafíos</li>
-        <li>Acompañamiento paso a paso</li>
+        <li>Diseña tus propios juegos y animaciones</li>
+        <li>Desarrolla creatividad, lógica y pensamiento computacional</li>
+        <li>Cupos limitados, reserva ya</li>
       </ul>
-      <p class="date">🌈 ¡Convertite en creador digital!<br>📅 Lanzamiento: Julio 2025</p>
-      <div class="footer">🚀 ¡No te lo pierdas! Ideal para principiantes, creativos y futuros programadores.</div>
+      <p class="date">🚀 Iniciamos el 10 de julio 2025</p>
+      
+      <div class="video-responsive">
+        <iframe 
+          src="https://www.facebook.com/plugins/video.php?height=394&href=https%3A%2F%2Fwww.facebook.com%2F61574218771271%2Fvideos%2F1262199885342876%2F&show_text=false&width=560&t=0" 
+          allowfullscreen="true" 
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+        </iframe>
+      </div>
+
+      <div class="footer">
+        INT SOLUTIONS | Educación con tecnología<br>
+        📲 Más información al WhatsApp:<br>
+        <a href="https://wa.me/593982401789" target="_blank" class="btn" style="background-color:#25D366; margin-top: 1rem;">
+          💬 Chatea por WhatsApp
+        </a><br><br>
+        🚀 ¡No te lo pierdas!
+      </div>
     </div>
   </section>
 
-  <!-- ========== SECCIÓN FULLSTACK ========== -->
+  <!-- SECCIÓN FULLSTACK -->
   <section id="fullstack" class="fullstack-section">
     <div class="container">
       <h1>¡Curso Full Stack!</h1>
