@@ -10,6 +10,8 @@ import gestionPDF from "./Imagenes/gestion.pdf";
 import MetodosPDF from "./Imagenes/Metodos.pdf";
 import javaPDF from "./Imagenes/java.pdf";
 import TranformarPDF from "./Imagenes/Certificacion_Curso_Transformar.pdf";
+import Scratch from "./Imagenes/Scratch.pdf";
+
 
 import graduado1 from "./Imagenes/graduado1.jpg";
 import graduado2 from "./Imagenes/graduado2.jpg";
@@ -128,6 +130,10 @@ function CursosCard() {
           <div className="Curso5">
             Preparación para el Ingreso a la Universidad
             <a href={TranformarPDF} target="_blank" rel="noreferrer">(Estudiantes que han culminado el curso)</a>
+          </div>
+          <div className="Curso6">
+            Curso de Scratch
+            <a href={Scratch} target="_blank" rel="noreferrer">(Estudiantes que han culminado el curso)</a>
           </div>
         </div>
       </div>
