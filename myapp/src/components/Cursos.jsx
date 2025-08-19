@@ -10,7 +10,7 @@ import gestionPDF from "./Imagenes/gestion.pdf";
 import MetodosPDF from "./Imagenes/Metodos.pdf";
 import javaPDF from "./Imagenes/java.pdf";
 import TranformarPDF from "./Imagenes/Certificacion_Curso_Transformar.pdf";
-import Scratch from "./Imagenes/Scratch.pdf";
+import Scratch from "./Imagenes/scratch.pdf";
 
 
 import graduado1 from "./Imagenes/graduado1.jpg";
