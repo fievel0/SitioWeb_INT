@@ -95,11 +95,11 @@ function CursosCard() {
         <div className="contenedor-graduados">
           <div className="graduado">
             <img src={graduado1} alt="Graduado 1" />
-            <p>Montserrat Evoleth Ramos Paucar</p>
+            <p>Montserrat</p>
           </div>
           <div className="graduado">
             <img src={graduado2} alt="Graduado 2" />
-            <p>Nicolas Uriel Ramos Paucar</p>
+            <p>Nicolas</p>
           </div>
         </div>
       </div>
