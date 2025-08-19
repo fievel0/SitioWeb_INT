@@ -1,0 +1,131 @@
+/* ====== SERVICIOS CARD ====== */
+.servicios {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background: #f9f9f9;
+}
+
+.tituloServicios {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #0047ab;
+  line-height: 1.2;
+}
+
+/* Grid tarjetas */
+.contenedor-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Tarjeta individual */
+.tarjeta {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tarjeta:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.15);
+}
+
+.tarjeta h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #003a8c;
+}
+
+/* Imágenes de tarjetas */
+.tarjeta img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ====== VIDEOS ====== */
+.tarjeta video {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+/* Diferencia entre horizontales y verticales */
+.tarjeta video[width][height] {
+  max-height: 350px; /* horizontales */
+}
+
+.tarjeta video[height][width] {
+  max-height: 500px; /* verticales */
+  max-width: 300px;
+}
+
+/* Siempre que haya mezcla, horizontales ocupan más ancho */
+.tarjeta.horizontal {
+  grid-column: span 2;
+}
+
+/* Texto de descripción */
+.tarjeta p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* ====== RESPONSIVE ====== */
+
+/* Tablets */
+@media (max-width: 900px) {
+  .tarjeta {
+    padding: 20px 15px;
+  }
+  .tarjeta img,
+  .tarjeta video {
+    max-width: 100%;
+    max-height: 280px;
+  }
+  .tarjeta.horizontal {
+    grid-column: span 1; /* en pantallas medianas no se extiende */
+  }
+}
+
+/* Móviles */
+@media (max-width: 600px) {
+  .servicios {
+    padding: 40px 15px;
+  }
+
+  .tituloServicios {
+    font-size: 1.6rem;
+    margin-bottom: 35px;
+  }
+
+  .contenedor-tarjetas {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .tarjeta img,
+  .tarjeta video {
+    max-width: 100%;
+    max-height: 350px;
+  }
+}

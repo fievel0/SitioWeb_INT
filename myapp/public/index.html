@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="En Int-solutions ofrecemos servicio técnico, cursos y vendemos artículos para tu celular o computadora. Y más servicios."
+    />
+    <link rel="canonical" href="https://www.int-solutionstec.com/" />
+    <title>Servicio Técnico | Int-solutions | Quito</title>
+    <link rel="icon" type="image/png" href="./Imagenes/pnglogo.png" />
+  </head>
+  <body>
+    <noscript>Necesitas habilitar JavaScript para ejecutar esta aplicación.</noscript>
+    <div id="root"></div>
+  </body>
+   <!-- Footer -->
+
+  <footer class="footer" role="contentinfo" aria-label="Pie de página">
+    <div class="footer-container">
+
+      <section class="footer-section footer-about" aria-labelledby="footer-about-title">
+        <h4 id="footer-about-title">Sobre INT-SOLUTIONS</h4>
+        <p>Somos expertos en soluciones técnicas, cursos y venta de artículos tecnológicos para tu celular o computadora.</p>
+      </section>
+
+      <section class="footer-section footer-nav" aria-labelledby="footer-nav-title">
+        <h4 id="footer-nav-title">Navegación</h4>
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./servicios.html">Servicios</a></li>
+          <li><a href="./cursos.html">Cursos</a></li>
+          <li><a href="./mas.html">Más</a></li>
+        </ul>
+      </section>
+
+      <section class="footer-section footer-contact" aria-labelledby="footer-contact-title">
+        <h4 id="footer-contact-title">Contacto</h4>
+        <p>Email: <a href="mailto:intsolutionstec@gmail.com">intsolutionstec@gmail.com</a></p>
+        <p>Teléfono: <a href="tel:+593961306164">0961306164</a></p>
+        <p>Dirección: Quito, Ecuador</p>
+      </section>
+
+      <section class="footer-section footer-social" aria-labelledby="footer-social-title">
+        <h4 id="footer-social-title">Redes Sociales</h4>
+        <a href="https://www.facebook.com/share/1Aau188kMz/" target="_blank" rel="noopener" aria-label="Facebook INT-SOLUTIONS" title="Facebook INT-SOLUTIONS">
+          <svg class="footer-social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="#1877F2">
+            <path d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.466.099 2.797.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.312h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.326-.597 1.326-1.326V1.326C24 .597 23.403 0 22.675 0z"/>
+          </svg>
+        </a>
+      </section>
+
+
+    </div>
+      <button class="cy" onclick="tuFuncion()">
+        <img class="botonWhats" src="./aplicacion.png" alt="comentario">
+      </button>
+    <div class="footer-bottom">
+      <p>© 2025 INT-SOLUTIONS. Todos los derechos reservados.</p>
+      <p>Desarrollado por <a href="https://www.facebook.com/share/1Aau188kMz/" target="_blank" rel="noopener">INT-SOLUTIONS</a></p>
+    </div>
+  </footer>
+  <script>
+    function createContactModal() {
+  if (document.getElementById('contact-overlay')) return;
+
+  // Crea el overlay
+  const overlay = document.createElement('div');
+  overlay.id = 'contact-overlay';
+  Object.assign(overlay.style, {
+    position: 'fixed',
+    top: '0',
+    left: '0',
+    width: '100%',
+    height: '100%',
+    background: 'rgba(0, 0, 0, 0.6)',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    zIndex: '1000',
+    padding: '1rem',
+  });
+
+  // Modal principal
+  const modal = document.createElement('div');
+  modal.id = 'contact-modal';
+  Object.assign(modal.style, {
+    background: '#fff',
+    padding: '2rem',
+    borderRadius: '12px',
+    width: '100%',
+    maxWidth: '420px',
+    boxSizing: 'border-box',
+    textAlign: 'center',
+    position: 'relative',
+    boxShadow: '0 8px 16px rgba(0,0,0,0.2)',
+    fontFamily: 'Arial, sans-serif',
+  });
+
+  // Botón cerrar
+  const closeBtn = document.createElement('span');
+  closeBtn.innerHTML = '&times;';
+  Object.assign(closeBtn.style, {
+    position: 'absolute',
+    top: '10px',
+    right: '15px',
+    cursor: 'pointer',
+    fontSize: '28px',
+    color: '#999',
+  });
+  closeBtn.addEventListener('click', () => {
+    document.body.removeChild(overlay);
+  });
+  modal.appendChild(closeBtn);
+
+  // Título principal
+  const title = document.createElement('h2');
+  title.textContent = '¿Cómo deseas contactarnos?';
+  title.style.marginBottom = '1rem';
+  title.style.color = '#333';
+  modal.appendChild(title);
+
+  // SECCIÓN 1: Correo
+  const correoDiv = document.createElement('div');
+  correoDiv.style.marginBottom = '1.5rem';
+
+  const correoMsg = document.createElement('p');
+  correoMsg.textContent = '📩 ¿Quieres enviarnos un correo? Pulsa uno de los siguientes:';
+  correoMsg.style.marginBottom = '0.5rem';
+  correoMsg.style.fontWeight = 'bold';
+  correoDiv.appendChild(correoMsg);
+
+  ['faibol_men19@hotmail.com', 'intsolutionstec@gmail.com'].forEach(email => {
+    const btn = document.createElement('button');
+    btn.textContent = email;
+    Object.assign(btn.style, {
+      margin: '5px',
+      padding: '8px 12px',
+      borderRadius: '6px',
+      border: 'none',
+      background: '#007BFF',
+      color: '#fff',
+      cursor: 'pointer',
+      fontSize: '14px',
+    });
+    btn.addEventListener('click', () => {
+      window.location.href = `mailto:${email}`;
+    });
+    correoDiv.appendChild(btn);
+  });
+  modal.appendChild(correoDiv);
+
+  // SECCIÓN 2: Llamada
+  const callDiv = document.createElement('div');
+  callDiv.style.marginBottom = '1.5rem';
+
+  const callMsg = document.createElement('p');
+  callMsg.textContent = '📞 ¿Prefieres llamarnos directamente? Pulsa un número:';
+  callMsg.style.marginBottom = '0.5rem';
+  callMsg.style.fontWeight = 'bold';
+  callDiv.appendChild(callMsg);
+
+  ['0961306164', '0982401789'].forEach(num => {
+    const btn = document.createElement('button');
+    btn.textContent = num;
+    Object.assign(btn.style, {
+      margin: '5px',
+      padding: '8px 12px',
+      borderRadius: '6px',
+      border: 'none',
+      background: '#28a745',
+      color: '#fff',
+      cursor: 'pointer',
+      fontSize: '14px',
+    });
+    btn.addEventListener('click', () => {
+      window.location.href = `tel:${num}`;
+    });
+    callDiv.appendChild(btn);
+  });
+  modal.appendChild(callDiv);
+
+  // SECCIÓN 3: WhatsApp
+  const waDiv = document.createElement('div');
+  waDiv.style.marginBottom = '1.5rem';
+
+  const waMsg = document.createElement('p');
+  waMsg.textContent = '💬 ¿Quieres escribirnos por WhatsApp? Pulsa aquí:';
+  waMsg.style.marginBottom = '0.5rem';
+  waMsg.style.fontWeight = 'bold';
+  waDiv.appendChild(waMsg);
+
+  [
+    { display: '0961306164', code: '593961306164' },
+    { display: '0982401789', code: '593982401789' }
+  ].forEach(({ display, code }) => {
+    const btn = document.createElement('button');
+    btn.textContent = display;
+    Object.assign(btn.style, {
+      margin: '5px',
+      padding: '8px 12px',
+      borderRadius: '6px',
+      border: 'none',
+      background: '#25D366',
+      color: '#fff',
+      cursor: 'pointer',
+      fontSize: '14px',
+    });
+    btn.addEventListener('click', () => {
+      window.open(`https://wa.me/${code}`, '_blank');
+    });
+    waDiv.appendChild(btn);
+  });
+  modal.appendChild(waDiv);
+
+  
+
+  // Agrega el modal al overlay y al body
+  overlay.appendChild(modal);
+  document.body.appendChild(overlay);
+}
+
+// Puedes llamarlo desde un botón o evento
+function tuFuncion() {
+  createContactModal();
+}
+
+  </script>
+</html>

@@ -1,0 +1,118 @@
+/* Productos.css */
+
+/* -------------------- Estilos generales -------------------- */
+.contenido {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+/* Títulos de sección */
+.titulo-seccion {
+  font-size: 2rem;
+  margin-top: -20px;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* Subtítulos */
+.subtitulo {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+/* Botón de contacto */
+.cy {
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto 2rem auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.botonWhats {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.2s;
+}
+
+.botonWhats:hover {
+  transform: scale(1.1);
+}
+
+/* -------------------- Galería -------------------- */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+  margin-bottom: 3rem;
+}
+
+.item {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.item img {
+  width: 100%;
+  max-width: 140px;
+  height: auto;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+}
+
+.item p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* -------------------- Responsive -------------------- */
+@media (max-width: 768px) {
+  .titulo-seccion {
+    font-size: 1.6rem;
+  }
+
+  .subtitulo {
+    font-size: 0.9rem;
+  }
+
+  .botonWhats {
+    width: 50px;
+    height: 50px;
+  }
+
+  .item img {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-seccion {
+    font-size: 1.4rem;
+  }
+
+  .subtitulo {
+    font-size: 0.85rem;
+  }
+
+  .item img {
+    max-width: 100px;
+  }
+}

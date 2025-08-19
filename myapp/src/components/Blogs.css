@@ -1,0 +1,117 @@
+/* Blogs.css */
+
+/* Contenedor general */
+.blogs-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+/* Título principal */
+.blogs-container h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  color: #1e3a8a; /* Azul oscuro llamativo */
+}
+
+/* Descripción general */
+.blogs-descripcion {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Contenedor de botones */
+.blogs-botones {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Botones de cada blog */
+.blog-button {
+  background-color: #1e3a8a;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.blog-button:hover {
+  background-color: #3b82f6; /* azul más brillante al pasar */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Contenedor de detalle del blog */
+.blogs-detalle {
+  display: flex;
+  justify-content: center;
+}
+
+/* Tarjeta del blog seleccionado */
+.blog-card {
+  background-color: #fff;
+  border-radius: 16px;
+  max-width: 700px;
+  width: 100%;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* Imagen del blog */
+.blog-imagen {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  height: 300px;
+}
+
+/* Título del blog */
+.blog-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #1e3a8a;
+}
+
+/* Información meta del blog */
+.blog-meta {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+/* Descripción del blog */
+.blog-descripcion {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Mensaje inicial cuando no hay blog seleccionado */
+.blogs-detalle p {
+  font-size: 1rem;
+  color: #666;
+  font-style: italic;
+  text-align: center;
+  margin-top: 2rem;
+}

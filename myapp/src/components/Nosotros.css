@@ -1,0 +1,175 @@
+/* Reset básico */
+ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+
+/* ==================== SERVICIOS ==================== */
+.servicios-nosotros {
+  background: #f0f6ff;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1a1a1a;
+}
+
+.servicios-nosotros .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.servicios-nosotros h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #0047ab;
+  letter-spacing: 1.2px;
+}
+
+.servicios-nosotros p.subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+/* Grid de servicios */
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.servicio-item {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 71, 171, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  cursor: default;
+}
+.servicio-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 32px rgba(0, 71, 171, 0.3);
+}
+
+/* Icono */
+.servicio-icon {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  background: #0047ab;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+  box-shadow: 0 4px 10px rgba(0, 71, 171, 0.4);
+}
+
+/* Texto */
+.servicio-texto h3 {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+  color: #003a8c;
+  font-weight: 700;
+}
+.servicio-texto p {
+  margin: 0;
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* ==================== POR QUÉ ELEGIRNOS ==================== */
+.por-que-elegirnos {
+  max-width: 900px;
+  margin: 60px auto 80px;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.por-que-elegirnos h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #0047ab;
+  margin-bottom: 40px;
+  letter-spacing: 1.2px;
+}
+
+.razones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.razon-item {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 71, 171, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  outline-offset: 4px;
+}
+
+.razon-item:hover,
+.razon-item:focus {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 36px rgba(0, 71, 171, 0.25);
+}
+
+.razon-icon {
+  font-size: 3rem;
+  color: #0047ab;
+  margin-bottom: 18px;
+  user-select: none;
+}
+
+.razon-item h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #003a8c;
+}
+
+.razon-item p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 600px) {
+  .servicio-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .servicio-icon {
+    margin-bottom: 15px;
+  }
+  .razones-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .por-que-elegirnos h2 {
+    font-size: 1.8rem;
+  }
+  .razon-icon {
+    font-size: 2.5rem;
+  }
+  .razon-item h3 {
+    font-size: 1.1rem;
+  }
+  .razon-item p {
+    font-size: 0.95rem;
+  }
+}

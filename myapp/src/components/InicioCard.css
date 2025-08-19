@@ -1,0 +1,405 @@
+/* -------------------- Estilos generales -------------------- */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.Cuerpo {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* -------------------- Publicidad / Toast -------------------- */
+.toastt {
+  background-color: #fffae5;
+  padding: 15px;
+  margin: 20px 0;
+  border-left: 5px solid #ffb400;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.toastt a {
+  text-decoration: none;
+  color: #333;
+}
+
+.bold-fullstack {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.learn-more {
+  font-weight: bold;
+  color: #ff5722;
+}
+
+/* -------------------- Entradas -------------------- */
+.entradas {
+  margin: 50px 0;
+}
+
+.tituloentradas {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.contenedor-entradas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.entrada {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.entrada:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.entrada img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.entrada h3 {
+  font-size: 1.4rem;
+  margin: 15px;
+}
+
+.entrada p {
+  font-size: 0.95rem;
+  margin: 0 15px 15px;
+  line-height: 1.5;
+}
+
+.meta {
+  font-size: 0.8rem;
+  padding: 0 15px 15px;
+  color: #777;
+}
+
+/* -------------------- Servicios -------------------- */
+.servicios {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.tituloServicios {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.descripcionServicios {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.contenedor-servicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.servicio {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.servicio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.servicio img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.servicio h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.servicio p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.boton-info {
+  display: inline-block;
+  padding: 8px 15px;
+  background: #007bff;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.boton-info:hover {
+  background: #0056b3;
+}
+
+/* -------------------- Contacto y Ubicación -------------------- */
+.seccion-contacto-ubicacion {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 50px 0;
+}
+
+.Contactoo, .Ubicacioon {
+  flex: 1 1 300px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.TituloContactoo, .tituloUbicacioon {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.descripcionContactoo, .descripcionUbicacioon {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.correosContactoo div, .numerosContactoo div {
+  margin-bottom: 5px;
+}
+
+.redSocialContactoo a {
+  color: #4267B2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.redSocialContactoo a:hover {
+  text-decoration: underline;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 250px;
+  border: none;
+  border-radius: 12px;
+}
+
+
+/* ====== CAROUSEL ====== */
+.carousel {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  overflow: hidden;
+  position: relative;
+  border-radius: 12px;
+  background: #000;
+  margin-top: -30px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1); /* efecto suave */
+  width: 100%;
+}
+
+/* ====== SLIDE ====== */
+.slide {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 30px;
+  gap: 30px;
+  background: #000214; /* Fondo negro azulado elegante */
+  flex-shrink: 0;
+}
+
+.Letras {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Tipografía optimizada */
+.titulodos {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.encabezadodoss {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-weight: 400;
+  color: #dcdcdc;
+  line-height: 1.5;
+  max-width: 550px;
+}
+
+.encabezadotres {
+  font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+  color: #bbbbbb;
+  max-width: 500px;
+  line-height: 1.4;
+}
+
+/* Imagen */
+.FondoCuerpo {
+  flex: 1;
+  max-width: 420px;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+/* ====== ARROWS ====== */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.arrow:hover {
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+}
+
+.arrow-left {
+  left: 12px;
+}
+
+.arrow-right {
+  right: 12px;
+}
+
+/* ====== DOTS ====== */
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 15px 0;
+  background: #000214;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #888;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #fff;
+}
+/* ===================== RESPONSIVE ===================== */
+
+/* Tablets (max 900px) */
+@media (max-width: 900px) {
+  .slide {
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .Letras {
+    max-width: 90%;
+  }
+
+  .FondoCuerpo {
+    max-width: 320px;
+    height: 200px;
+  }
+}
+
+/* Móviles (max 600px) */
+@media (max-width: 600px) {
+  .slide {
+    flex-direction: column; /* Imagen abajo */
+    padding: 20px 15px;
+    gap: 15px;
+    text-align: center;
+    width: 100%;  /* que el slide nunca crezca más */
+    box-sizing: border-box;
+  }
+
+  .Letras {
+    width: 100%;         /* ocupa todo el ancho disponible */
+    max-width: 95%;      /* evita desbordarse */
+    margin: 0 auto;      /* centrado */
+    word-break: break-word; /* fuerza salto si algo es muy largo */
+    overflow-wrap: break-word;
+  }
+
+  .titulodos {
+    font-size: 1.4rem; 
+  }
+
+  .encabezadodoss {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .encabezadotres {
+    font-size: 0.9rem;
+    line-height: 1.3;
+  }
+
+  .FondoCuerpo {
+    max-width: 100%;
+    width: 100%;
+    height: auto;   /* se adapta al contenedor */
+    margin-top: 10px;
+  }
+
+  .arrow {
+    font-size: 1.3rem;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+  }
+}
